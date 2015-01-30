@@ -1,5 +1,3 @@
-Content
-
 [楔子：班车时间表](https://github.com/yidingcn/novel/blob/master/%E6%A5%94%E5%AD%90%EF%BC%9A%E7%8F%AD%E8%BD%A6%E6%97%B6%E9%97%B4%E8%A1%A8.md)
 
 [第一章：燕子](https://github.com/yidingcn/novel/blob/master/%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E7%87%95%E5%AD%90.md)
