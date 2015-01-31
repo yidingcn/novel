@@ -13,6 +13,7 @@ For collaborators：微小贡献请直接从速check in，中量/大量贡献请
 
 [第三章：雪](https://github.com/yidingcn/novel/blob/master/%E7%AC%AC%E4%B8%89%E7%AB%A0%EF%BC%9A%E9%9B%AA.md)
 
+[第四章：船](https://github.com/yidingcn/novel/blob/master/%E7%AC%AC%E5%9B%9B%E7%AB%A0%EF%BC%9A%E8%88%B9.md)
 ...
 ...
 ...
@@ -22,3 +23,5 @@ For collaborators：微小贡献请直接从速check in，中量/大量贡献请
 [第十七章：高速](https://github.com/yidingcn/novel/blob/master/%E7%AC%AC%E5%8D%81%E4%B8%83%E7%AB%A0%EF%BC%9A%E9%AB%98%E9%80%9F.md)
 
 [第十八章：千禧广场](https://github.com/yidingcn/novel/blob/master/%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0%EF%BC%9A%E5%8D%83%E7%A6%A7%E5%B9%BF%E5%9C%BA.md)
+
+[第十九章：似然](https://github.com/yidingcn/novel/blob/master/%E7%AC%AC%E5%8D%81%E4%B9%9D%E7%AB%A0%EF%BC%9A%E4%BC%BC%E7%84%B6.md)
