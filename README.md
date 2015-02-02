@@ -15,6 +15,7 @@ For collaborators：微小贡献请直接从速check in，中量/大量贡献请
 
 [第四章：船](https://github.com/yidingcn/novel/blob/master/%E7%AC%AC%E5%9B%9B%E7%AB%A0%EF%BC%9A%E8%88%B9.md)
 
+[第五章：鱼](https://github.com/yidingcn/novel/blob/master/%E7%AC%AC%E4%BA%94%E7%AB%A0%EF%BC%9A%E9%B1%BC.md)
 
 ...
 ...
