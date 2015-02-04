@@ -34,3 +34,5 @@ For collaborators：微小贡献请直接从速check in，中量/大量贡献请
 [第十九章：似然](https://github.com/yidingcn/novel/blob/master/%E7%AC%AC%E5%8D%81%E4%B9%9D%E7%AB%A0%EF%BC%9A%E4%BC%BC%E7%84%B6.md)
 
 [第二十章：一物降一物](https://github.com/yidingcn/novel/blob/master/%E7%AC%AC%E4%BA%8C%E5%8D%81%E7%AB%A0%EF%BC%9A%E4%B8%80%E7%89%A9%E9%99%8D%E4%B8%80%E7%89%A9.md)
+
+[第二十一章：欢迎宴](https://github.com/yidingcn/novel/blob/master/%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%80%E7%AB%A0%EF%BC%9A%E6%AC%A2%E8%BF%8E%E5%AE%B4.md)
