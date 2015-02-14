@@ -17,6 +17,8 @@ For collaborators：微小贡献请直接从速check in，中量/大量贡献请
 
 [第五章：鱼](https://github.com/yidingcn/novel/blob/master/%E7%AC%AC%E4%BA%94%E7%AB%A0%EF%BC%9A%E9%B1%BC.md)
 
+[第六章：旋](https://github.com/yidingcn/novel/blob/master/%E7%AC%AC%E5%85%AD%E7%AB%A0%EF%BC%9A%E6%97%8B.md)
+
 ...
 
 [第八章：阳](https://github.com/yidingcn/novel/blob/master/%E7%AC%AC%E5%85%AB%E7%AB%A0%EF%BC%9A%E9%98%B3.md)
@@ -36,3 +38,9 @@ For collaborators：微小贡献请直接从速check in，中量/大量贡献请
 [第二十章：一物降一物](https://github.com/yidingcn/novel/blob/master/%E7%AC%AC%E4%BA%8C%E5%8D%81%E7%AB%A0%EF%BC%9A%E4%B8%80%E7%89%A9%E9%99%8D%E4%B8%80%E7%89%A9.md)
 
 [第二十一章：欢迎宴](https://github.com/yidingcn/novel/blob/master/%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%80%E7%AB%A0%EF%BC%9A%E6%AC%A2%E8%BF%8E%E5%AE%B4.md)
+
+[第二十二章 邀约](https://github.com/yidingcn/novel/blob/master/%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%BA%8C%E7%AB%A0%EF%BC%9A%E9%82%80%E7%BA%A6.md)
+
+[第二十三章 瑾瑜](https://github.com/yidingcn/novel/blob/master/%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%89%E7%AB%A0%EF%BC%9A%E7%91%BE%E7%91%9C.md)
+
+[第二十四章：平行宇宙](https://github.com/yidingcn/novel/blob/master/%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%9B%9B%E7%AB%A0%EF%BC%9A%E5%B9%B3%E8%A1%8C%E5%AE%87%E5%AE%99.md)
