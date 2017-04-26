@@ -19,9 +19,9 @@ For collaborators：微小贡献请直接从速check in，中量/大量贡献请
 
 [第六章：旋](https://github.com/yidingcn/novel/blob/master/%E7%AC%AC%E5%85%AD%E7%AB%A0%EF%BC%9A%E6%97%8B.md)
 
-...
+[第七章：阳](%E7%AC%AC%E4%B8%83%E7%AB%A0%EF%BC%9A%E9%98%B3.md)
 
-[第八章：阳](https://github.com/yidingcn/novel/blob/master/%E7%AC%AC%E5%85%AB%E7%AB%A0%EF%BC%9A%E9%98%B3.md)
+[第八章：问](%E7%AC%AC%E5%85%AB%E7%AB%A0%EF%BC%9A%E9%97%AE.md)
 
 ...
 ...
