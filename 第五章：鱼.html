@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>第五章：鱼 - </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+
+        <!-- MathJax -->
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = localStorage.getItem('theme');
+            if (theme == null) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = localStorage.getItem('sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="./楔子：班车时间表.html"><strong>1.</strong> 楔子：班车时间表</a></li><li><a href="./第一章：燕.html"><strong>2.</strong> 第一章：燕</a></li><li><a href="./第二章：雾.html"><strong>3.</strong> 第二章：雾</a></li><li><a href="./第三章：雪.html"><strong>4.</strong> 第三章：雪</a></li><li><a href="./第四章：船.html"><strong>5.</strong> 第四章：船</a></li><li><a href="./第五章：鱼.html" class="active"><strong>6.</strong> 第五章：鱼</a></li><li><a href="./第六章：旋.html"><strong>7.</strong> 第六章：旋</a></li><li><a href="./第七章：阳.html"><strong>8.</strong> 第七章：阳</a></li><li><a href="./第八章：问.html"><strong>9.</strong> 第八章：问</a></li><li><a href="./第九章：旅途.html"><strong>10.</strong> 第九章：旅途</a></li><li><a href="./第十章：风月.html"><strong>11.</strong> 第十章：风月</a></li><li><a href="./第十一章：昔日.html"><strong>12.</strong> 第十一章：昔日</a></li><li><a href="./第十二章：见习.html"><strong>13.</strong> 第十二章：见习</a></li><li><a href="./第十三章：永安路1538.html"><strong>14.</strong> 第十三章：永安路1538</a></li><li><a href="./第十六章：实习生.html"><strong>15.</strong> 第十六章：实习生</a></li><li><a href="./第十七章：高速.html"><strong>16.</strong> 第十七章：高速</a></li><li><a href="./第十八章：千禧广场.html"><strong>17.</strong> 第十八章：千禧广场</a></li><li><a href="./第十九章：似然.html"><strong>18.</strong> 第十九章：似然</a></li><li><a href="./第二十章：一物降一物.html"><strong>19.</strong> 第二十章：一物降一物</a></li><li><a href="./第二十一章：欢迎宴.html"><strong>20.</strong> 第二十一章：欢迎宴</a></li><li><a href="./第二十二章：邀约.html"><strong>21.</strong> 第二十二章：邀约</a></li><li><a href="./第二十三章：瑾瑜.html"><strong>22.</strong> 第二十三章：瑾瑜</a></li><li><a href="./第二十四章：平行宇宙.html"><strong>23.</strong> 第二十四章：平行宇宙</a></li><li><a href="./第二十五章：宿命.html"><strong>24.</strong> 第二十五章：宿命</a></li><li><a href="./第二十六章：约会.html"><strong>25.</strong> 第二十六章：约会</a></li><li><a href="./第二十七章：赴约.html"><strong>26.</strong> 第二十七章：赴约</a></li><li><a href="./第二十八章：私心.html"><strong>27.</strong> 第二十八章：私心</a></li><li><a href="./第二十九章：献血.html"><strong>28.</strong> 第二十九章：献血</a></li><li><a href="./第三十章：意外.html"><strong>29.</strong> 第三十章：意外</a></li><li><a href="./第三十一章：永别.html"><strong>30.</strong> 第三十一章：永别</a></li><li><a href="./第三十二章：摊牌.html"><strong>31.</strong> 第三十二章：摊牌</a></li><li><a href="./第三十三章：转机.html"><strong>32.</strong> 第三十三章：转机</a></li><li><a href="./第三十四章：启程.html"><strong>33.</strong> 第三十四章：启程</a></li><li><a href="./第三十五章：梧桐树大街.html"><strong>34.</strong> 第三十五章：梧桐树大街</a></li><li><a href="./第三十六章：地铁.html"><strong>35.</strong> 第三十六章：地铁</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush"></i>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="./第五章：鱼.html#第五章-鱼" id="第五章-鱼"><h2>第五章 鱼</h2></a>
+<p>黄河的中段有个地方叫龙门，大禹的年代，鲤鱼由于帮助治水有功而得到上天的嘉奖。</p>
+<p>每年的一个时节里，龙门就会与天河相连通。而一条条的鲤鱼便跃跃欲试，</p>
+<p>谁能一鼓作气越过龙门，便可升为仙鱼。但是每年只有一次这样的机会，没有跃过去的只好留在凡间，徒徒羡慕天上的同伴。</p>
+<p>九月依稀记得雪曾经在课堂演讲的时候讲过这个龙门的故事（为了锻炼口才，语文老师每堂课会请一位同学准备好演讲，内容不限），而且恰恰就发生在那节音乐课之后。</p>
+<p>莫非是他自有感应？九月心理想。想到自己亲自把一条鳕鱼送上了龙门，也是挺奇妙的。等等，这个比喻是不是和灯塔的一样糟糕？</p>
+<p>“成了仙鱼之后有什么好处呢？它们每天都干嘛呀？”等到雪回来座位上，后面的薇龙突然凑过来问道。</p>
+<p>鱼还能干嘛，游来游去呗？难道还能去打仗不成。九月心里默想。</p>
+<p>“它们嘛，平时就在天河里嬉戏。但是每年都要舞枪弄棒集中操练三个月！所以呢也是挺辛苦的。”雪一本正经的答道，仿佛它是这些鱼中的一员。</p>
+<p>他的确可以称得上是，如果语文老师认同九月的比喻的话。</p>
+<p>“操练?跟着谁操练?”</p>
+<p>“当然是跟着天蓬元帅猪刚鬣啦，人家掌管十万水军呢。”</p>
+<p>“哈…一头猪带着一群鱼操练噢。”薇龙笑道。</p>
+<p>“唔…”雪说。</p>
+<p>九月也不明咎里，等薇龙走开以后偷偷地问雪到底讲得是不是真的？</p>
+<p>“好吧，是我随便说说的。” 雪承认道。</p>
+<p>“猪八戒那部分？”九月问。</p>
+<p>“不，龙门的部分也是…”</p>
+<p>“啊？”</p>
+<p>“怎么了”</p>
+<p>“你居然一本正经地说瞎话。”九月感到很惊奇。</p>
+<p>“反正是传说，编一个又没什么。就算是翻辞典查过来的，那不也是别人编的么？”</p>
+<p>“唔…”似乎很有道理的样子，九月不知道怎么回答。</p>
+<p>“苏轼中状元的那篇文章里他还杜撰了一个典故哩，后来不是也受人赞赏么？”</p>
+<p>对于九月来说，苏轼只是语文课本上会写很难背诵的诗文的那几个人之一，这个名字跟李白、杜甫没什么本质区别。</p>
+<p>“唔…还有这个事儿。”</p>
+<p>从那以后，九月决定开始关心这些原本无关紧要的字词。雪似乎知道她所不知道的世界，而九月在慢慢向这个新世界靠近…</p>
+<p>可是今天，这个世界突然发生了一个大震荡。</p>
+<p>鱼儿跃过龙门，真得要出走了。</p>
+<p>等看到雪，九月立马问他桌上的本子是怎么回事。</p>
+<p>“我下个学期不在这儿念了。我爸要带我去念星火中学。”</p>
+<p>星火中学是隔壁市的一所重点学校，对于优秀的学生实行初高中六年连读制，考试成绩在省内属于超一流水平。</p>
+<p>“啊？”虽然早就知道星火中学是所好学校，但没想到会有人读到一半特意转学去念，而且这个人就在身边。“为什么呢？”</p>
+<p>这个问题一说出口，九月马上觉得有点傻。</p>
+<p>“唔…我也不知道，我爸说那边好。”</p>
+<p>两个个体相处久了，必然从各方面对对方会产生影响，生物学上还没有给这种现象定下学名，我们姑且称之为蜻蜓效应——继蝴蝶效应以后又一重大发现。</p>
+<p>雪不经意间，用上了本来是九月口头禅。</p>
+<p>“听说那边老师很严，抓得很紧的吧？”薇龙也凑过来问到，她似乎已经知道雪要走了这件事实。</p>
+<p>“恩，好像是的，但我也是听说如此，好像课业很多，放假又少。”</p>
+<p>“不要紧的，挺过了几年，以后就前途无量了！”九月安慰道。</p>
+<p>“以后？一个人进了星火，就没有什么以后啦。”雪似乎给了一个莫名其妙的回答。</p>
+<p>蜻蜓效应法则之二，两个生物个体的语料有了一定量的积累以后便会产生一个语料库。</p>
+<p>而最神奇的是，这个语料库中充满着一些乏善可陈的术语，它们只为两个人所知晓，第三方听到这种术语往往云里雾里。</p>
+<p>“没有以后？”一团云雾似乎罩住了薇龙的身躯，她左右晃着脑袋，渴望看清雾后面的世界。</p>
+<p>“也没那么惨吧，又不是坐牢？”九月这边似乎晴空万里。</p>
+<p>“唔，不管怎么样，既然是要发生的，也没得回避啦。”</p>
+<p>因为临近终考，那天下午是一下午的自习课，老师也没怎么来。</p>
+<p>于是他们就这样聊了一下午，开始是三个人聊。后来薇龙家里有事被妈妈接回去了，便变成他们两个人聊。</p>
+<p>九月不大记得当时都说了些什么，觉得有一片空白在自己脑中扩散开，逐渐散开，最后整个脑子都是空白。</p>
+<p>第一天，还为自己居然要跟这样一个人做三年同桌觉得惋惜。</p>
+<p>可是，没想到应该出现在本来三年后的那一天那么快就到来。</p>
+<p>很快要到放学的时间点了，九月觉得那天下午过得特别快。</p>
+<p>“你又没觉得今天下午时钟走得好快啊，为什么缘故呢？”九月问道。似乎这种问题雪也能给她满意的回答。</p>
+<p>“恩…是啊。也许，今天下下午觉得比较轻松的缘故吧。人谈那什么…”雪顿了顿，“轻松的话题的时候，时间就会过得很快，相对论这么说的。”</p>
+<p>“相对论？爱因斯坦那个相对论？”九月觉得雪又在一本正经地说瞎话。</p>
+<p>“是啊，相对论一个主要论点就是讲这个。我以我的雪字担保。”</p>
+<p>九月心中确信相对论应该是一堆没法看懂的几元几什么方程式，不过既然雪这么肯定，姑且就相信他。</p>
+<p>叮……</p>
+<p>就在这时候，下课铃响了。原本是世间最欢乐的乐曲到这时候听起来却像是最可恶的噪音，一切都是相对的，或许这也是相对论中的一条？</p>
+<p>如果不是，那也应该把它加上，九月心里想。</p>
+<p>他们走出教室，到校门口的路上还能聊一会儿。</p>
+<p>“我到那边会跟你联系的，你家电话是？”雪说。</p>
+<p>九月抄了一张纸条给他，“不过你平时别打，我妈经常在家。”</p>
+<p>“没事，她要接了我就说打错了。还有……你有什么课堂外要想知道的东西只管找我问好啦？”</p>
+<p>九月弄了半天才明白雪的意思，她擅长课本上的东西，他却擅长课外的。九月也经常这么夸他。</p>
+<p>“没有……等等，噢，对了……”由于“没有”两个字出去太快，九月想收也没能收回来。</p>
+<p>“那你告诉我，我为什么叫九月？”</p>
+<p>“这个…没问题，我下次考据好了告诉你。”</p>
+<p>下次？考据？九月将信将疑。</p>
+<p>很快，小小的约定穿过寒冬的校门口，消失在车水马龙的喧嚣中。他们也在喧嚣中道别，各奔东西。</p>
+<p>回到家，九月拍拍混混沉沉的脑袋。</p>
+<p>“来日方长嘛，别想别想，什么都别想。我现在要想的是三天后的考试。”</p>
+<p>从小到大的应试教育这时候给了九月无比强大的信念，她暂时抛掉今天发生的一切，投入到复习资料的海洋中去。</p>
+<p>“没有以后？”睡前，九月嘴里无意中念叨着这四个字。</p>
+<p>（全章完）</p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a href="./第四章：船.html" class="mobile-nav-chapters previous">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="./第六章：旋.html" class="mobile-nav-chapters next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="./第四章：船.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="./第六章：旋.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+    </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>第二十章：一物降一物 - </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+
+        <!-- MathJax -->
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = localStorage.getItem('theme');
+            if (theme == null) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = localStorage.getItem('sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="./楔子：班车时间表.html"><strong>1.</strong> 楔子：班车时间表</a></li><li><a href="./第一章：燕.html"><strong>2.</strong> 第一章：燕</a></li><li><a href="./第二章：雾.html"><strong>3.</strong> 第二章：雾</a></li><li><a href="./第三章：雪.html"><strong>4.</strong> 第三章：雪</a></li><li><a href="./第四章：船.html"><strong>5.</strong> 第四章：船</a></li><li><a href="./第五章：鱼.html"><strong>6.</strong> 第五章：鱼</a></li><li><a href="./第六章：旋.html"><strong>7.</strong> 第六章：旋</a></li><li><a href="./第七章：阳.html"><strong>8.</strong> 第七章：阳</a></li><li><a href="./第八章：问.html"><strong>9.</strong> 第八章：问</a></li><li><a href="./第九章：旅途.html"><strong>10.</strong> 第九章：旅途</a></li><li><a href="./第十章：风月.html"><strong>11.</strong> 第十章：风月</a></li><li><a href="./第十一章：昔日.html"><strong>12.</strong> 第十一章：昔日</a></li><li><a href="./第十二章：见习.html"><strong>13.</strong> 第十二章：见习</a></li><li><a href="./第十三章：永安路1538.html"><strong>14.</strong> 第十三章：永安路1538</a></li><li><a href="./第十六章：实习生.html"><strong>15.</strong> 第十六章：实习生</a></li><li><a href="./第十七章：高速.html"><strong>16.</strong> 第十七章：高速</a></li><li><a href="./第十八章：千禧广场.html"><strong>17.</strong> 第十八章：千禧广场</a></li><li><a href="./第十九章：似然.html"><strong>18.</strong> 第十九章：似然</a></li><li><a href="./第二十章：一物降一物.html" class="active"><strong>19.</strong> 第二十章：一物降一物</a></li><li><a href="./第二十一章：欢迎宴.html"><strong>20.</strong> 第二十一章：欢迎宴</a></li><li><a href="./第二十二章：邀约.html"><strong>21.</strong> 第二十二章：邀约</a></li><li><a href="./第二十三章：瑾瑜.html"><strong>22.</strong> 第二十三章：瑾瑜</a></li><li><a href="./第二十四章：平行宇宙.html"><strong>23.</strong> 第二十四章：平行宇宙</a></li><li><a href="./第二十五章：宿命.html"><strong>24.</strong> 第二十五章：宿命</a></li><li><a href="./第二十六章：约会.html"><strong>25.</strong> 第二十六章：约会</a></li><li><a href="./第二十七章：赴约.html"><strong>26.</strong> 第二十七章：赴约</a></li><li><a href="./第二十八章：私心.html"><strong>27.</strong> 第二十八章：私心</a></li><li><a href="./第二十九章：献血.html"><strong>28.</strong> 第二十九章：献血</a></li><li><a href="./第三十章：意外.html"><strong>29.</strong> 第三十章：意外</a></li><li><a href="./第三十一章：永别.html"><strong>30.</strong> 第三十一章：永别</a></li><li><a href="./第三十二章：摊牌.html"><strong>31.</strong> 第三十二章：摊牌</a></li><li><a href="./第三十三章：转机.html"><strong>32.</strong> 第三十三章：转机</a></li><li><a href="./第三十四章：启程.html"><strong>33.</strong> 第三十四章：启程</a></li><li><a href="./第三十五章：梧桐树大街.html"><strong>34.</strong> 第三十五章：梧桐树大街</a></li><li><a href="./第三十六章：地铁.html"><strong>35.</strong> 第三十六章：地铁</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush"></i>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="./第二十章：一物降一物.html#第二十章-一物降一物" id="第二十章-一物降一物"><h2>第二十章 一物降一物</h2></a>
+<p>第二天，龚磊早早地就来到了公司。来那么早倒并不是因为他是什么勤劳工作的员工，而是因为昨天晚餐时在餐厅看到的疑似九月的姑娘让他颇为在意，想确认一下究竟是不是自己的实习生。虽然说是确认，但龚磊的心里其实早就已经有了答案。</p>
+<p>九月的工位就在龚磊的不远处。这个位置是龚磊当时精心为她挑选的：龚磊一稍稍抬头就能看到她的屏幕，而九月即使回头也只能看到她和龚磊之间的另一位同事和一块格子间的挡板，而龚磊就坐在那块挡板的后面。“mentor始终都要保持神秘感嘛”，龚磊总是在心里这么说。而现在，九月还没来，她的桌上只有一台龚磊淘汰下来给她用的笔记本电脑，屏幕背盖上贴着龚磊当年一度沉迷的《高达00》的贴纸。</p>
+<p>“Hmmmm”，龚磊沉吟到，“只好等了咯”</p>
+<p>突然，龚磊感到耳边拂过一阵风，紧接着，一股巨力传达到了他的右肩，“啪”的一声，一只厚实的手掌，拍在了他的肩膀上。</p>
+<p>“嗷”，龚磊不由得一惊，好似受到了莫大的惊吓，而惊讶的表情没有持续多久，就迅速转变为了嫌弃。龚磊慢慢地转过头，边苦笑边对着身后手掌还抬在空中，表情好似一副什么事都没发生样子的肇事者说，“我靠刘哥，我跟你说了多少次不要再这样拍我啦，你不知道你是通关手嘛，这样拍很痛也很吓人诶”。</p>
+<p>刘哥是龚磊的同事，准确地说是龚磊的前辈，比龚磊早入职两年多，算是团队里的老人了。在IT行业，团队稳定性特别低，所以早个两三年就成为老人并不奇怪。刘哥不姓刘，而大家却都这么叫他。这倒不是因为大家忘记或者不知道他的真姓，而是因为刘哥是湖南人，又特别爱吹嘘，每次解决一个问题就对团队里的人说“怎么样，我刘逼吧”。久而久之，想因此而称呼他为“牛哥”的人也客随主便，入乡随俗，嫁鸡随鸡，嫁狗随狗地喊他“刘哥”了。</p>
+<p>“你小子啊，哈哈哈哈”，刘哥收起了手掌，对着无奈地看着他的龚磊一脸坏笑，“又没做什么坏事，干嘛怕我拍你啊”。还没等龚磊辩驳，刘哥顺延着龚磊刚才的视线，看到了九月的桌子，“你小子不会是对新来的小妹妹有什么不轨之心吧”。</p>
+<p>“我靠刘哥你不是吹嘘的吧，你觉得我堂堂龚磊，人称玉树临风胜潘安，一树梨花压海棠的w司coding小霸王会看上这样的小妮子？”</p>
+<p>“那可不一定哦”，不知何处传来的声音把龚磊吓了一跳，本还要接着蹦出来的话都被吓得一口咽了回去。只见工作区域旁的走廊转角处走出一位身材高挑的女郎，带着一顶鲜红的画家帽，穿着米色的风衣。一头略微有些红色的卷发披散了一些在胸前，随着主人轻快的脚步好似在翻飞舞蹈。这就是龚磊所在团队公认的麻辣女神，蓝缕。刚才那句话，显然是蓝缕在转角处听到龚磊和刘哥的对话，未见人先闻声地说给他哥俩听的。“谁知道你们这帮猥琐男，都对人家小妹妹安得什么坏心”，蓝缕显然没打算停下来，继续对着目瞪口呆的两个人补刀到。</p>
+<p>看到蓝缕出现，刘哥便默默地回到了自己的工位坐下，再也不揶揄龚磊了。这个时候，恐怕心细一些的人就能看出来了，刘哥似乎对蓝缕有些“怕”。不过这怕，倒并不只是因为蓝缕女神常常麻辣地呛我们“刘逼”的刘哥，而是因为每当被呛的刘哥想呛回去的时候，要成功地把女神的名字给念出来就得费好大的劲。往往是憋红了脸的刘哥终于忍不住了，一句“男女，我刘逼关你什么事哦”就逗得整个团队的人哈哈大笑。所以，蓝缕可以说是刘哥的克星。于是看到女神出现，刘哥也就默默地回自己工位去工作了。</p>
+<p>龚磊倒是想辩驳什么，可他刚想开口，就看到蓝缕刚才走出来的同一个转角又出现了一个熟悉的身影。</p>
+<p>“mentor早，蓝姐早，牛哥早”</p>
+<p>正是九月。</p>
+<p>（本章完）</p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a href="./第十九章：似然.html" class="mobile-nav-chapters previous">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="./第二十一章：欢迎宴.html" class="mobile-nav-chapters next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="./第十九章：似然.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="./第二十一章：欢迎宴.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+    </body>
+</html>

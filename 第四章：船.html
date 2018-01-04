@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>第四章：船 - </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+
+        <!-- MathJax -->
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = localStorage.getItem('theme');
+            if (theme == null) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = localStorage.getItem('sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="./楔子：班车时间表.html"><strong>1.</strong> 楔子：班车时间表</a></li><li><a href="./第一章：燕.html"><strong>2.</strong> 第一章：燕</a></li><li><a href="./第二章：雾.html"><strong>3.</strong> 第二章：雾</a></li><li><a href="./第三章：雪.html"><strong>4.</strong> 第三章：雪</a></li><li><a href="./第四章：船.html" class="active"><strong>5.</strong> 第四章：船</a></li><li><a href="./第五章：鱼.html"><strong>6.</strong> 第五章：鱼</a></li><li><a href="./第六章：旋.html"><strong>7.</strong> 第六章：旋</a></li><li><a href="./第七章：阳.html"><strong>8.</strong> 第七章：阳</a></li><li><a href="./第八章：问.html"><strong>9.</strong> 第八章：问</a></li><li><a href="./第九章：旅途.html"><strong>10.</strong> 第九章：旅途</a></li><li><a href="./第十章：风月.html"><strong>11.</strong> 第十章：风月</a></li><li><a href="./第十一章：昔日.html"><strong>12.</strong> 第十一章：昔日</a></li><li><a href="./第十二章：见习.html"><strong>13.</strong> 第十二章：见习</a></li><li><a href="./第十三章：永安路1538.html"><strong>14.</strong> 第十三章：永安路1538</a></li><li><a href="./第十六章：实习生.html"><strong>15.</strong> 第十六章：实习生</a></li><li><a href="./第十七章：高速.html"><strong>16.</strong> 第十七章：高速</a></li><li><a href="./第十八章：千禧广场.html"><strong>17.</strong> 第十八章：千禧广场</a></li><li><a href="./第十九章：似然.html"><strong>18.</strong> 第十九章：似然</a></li><li><a href="./第二十章：一物降一物.html"><strong>19.</strong> 第二十章：一物降一物</a></li><li><a href="./第二十一章：欢迎宴.html"><strong>20.</strong> 第二十一章：欢迎宴</a></li><li><a href="./第二十二章：邀约.html"><strong>21.</strong> 第二十二章：邀约</a></li><li><a href="./第二十三章：瑾瑜.html"><strong>22.</strong> 第二十三章：瑾瑜</a></li><li><a href="./第二十四章：平行宇宙.html"><strong>23.</strong> 第二十四章：平行宇宙</a></li><li><a href="./第二十五章：宿命.html"><strong>24.</strong> 第二十五章：宿命</a></li><li><a href="./第二十六章：约会.html"><strong>25.</strong> 第二十六章：约会</a></li><li><a href="./第二十七章：赴约.html"><strong>26.</strong> 第二十七章：赴约</a></li><li><a href="./第二十八章：私心.html"><strong>27.</strong> 第二十八章：私心</a></li><li><a href="./第二十九章：献血.html"><strong>28.</strong> 第二十九章：献血</a></li><li><a href="./第三十章：意外.html"><strong>29.</strong> 第三十章：意外</a></li><li><a href="./第三十一章：永别.html"><strong>30.</strong> 第三十一章：永别</a></li><li><a href="./第三十二章：摊牌.html"><strong>31.</strong> 第三十二章：摊牌</a></li><li><a href="./第三十三章：转机.html"><strong>32.</strong> 第三十三章：转机</a></li><li><a href="./第三十四章：启程.html"><strong>33.</strong> 第三十四章：启程</a></li><li><a href="./第三十五章：梧桐树大街.html"><strong>34.</strong> 第三十五章：梧桐树大街</a></li><li><a href="./第三十六章：地铁.html"><strong>35.</strong> 第三十六章：地铁</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush"></i>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="./第四章：船.html#第四章-船" id="第四章-船"><h2>第四章 船</h2></a>
+<p>期中考试很快告一段落。</p>
+<p>不知道维纳斯与丘比特是否真得会解初中的数理化，总之九月觉得自己是被她们普照到了。</p>
+<p>老师拿着一叠白纸咄咄地走进教室，大家都知道那是今天回家的宣判书。</p>
+<p>“这次我们班韩九月同学，是全年级第一名。”</p>
+<p>“哇。”周围传来唏嘘的声音。</p>
+<p>九月显得有点不自然，有意无意地歪过头去看欧阳雪，雪默默地给她做了个鬼脸，不知道是喜是乐。</p>
+<p>九月想起前不久看的一本杂志上说，有个性格测试题。</p>
+<p>说你的亲姐姐这一次考试考了非常好，回到家爸爸妈妈努力的夸奖。</p>
+<p>然后，你会：</p>
+<p>A. 真心感到高兴，向她表示祝福</p>
+<p>B. 心里十分记恨，向她表示冷漠</p>
+<p>C. 虽然有点嫉妒，还是表示庆贺</p>
+<p>九月觉得这种题很明摆着就是给人选C，或者说C这种答案生来就是给你选的。</p>
+<p>“雪……我看就是C罢了”。</p>
+<p>不久以后，班主任承诺的前十名红色榜单也终于挂了出来。</p>
+<p>“哇，你们两个好搭配呀…”后面薇龙的声音传来，“一个第一，一个第七”</p>
+<p>九月这才回过神来仔细看看榜单，果然雪在第七的排位上。</p>
+<p>“这小子还挺厉害的嘛。”九月心想</p>
+<p>事实上，九月领先第二名一点点，只因为语文差一点。雪能到第七名，全凭语文成绩好。</p>
+<p>但这时候，九月心里还抹不去那股傲慢的姿态，不敢跟雪有过多来往。雪毕竟还是她的竞争对手。</p>
+<p>榜单贴出来没几天，又轮到每周一节的音乐课。</p>
+<p>照理说这种时候的音乐课应该轻松愉快，可是对九月班上的同学们来说，可不是这样。</p>
+<p>这个音乐老师似乎每节课都能想出新的花样“整”同学们，比如接歌啦，识谱啦。</p>
+<p>而且一旦完不成的话会有严厉的惩罚，通常是把一整本音乐书抄写一遍。没错，就是一本书。</p>
+<p>九月虽然不是音乐通，但这些基本的东西对于从小耳濡目染的她简直小菜一碟，小时候妈妈经常带着她坐音乐游戏，她家里甚至有一台八十年代买的立式钢琴。</p>
+<p>不过自从家里会弹钢琴的那个人出走以后，琴盖就再也没有打开过，时间久了仿佛那就是一个普通的柜子。</p>
+<p>“哇，教室里今天放皇榜了呀！”传来了音乐老师的尖声细语。“这样吧，我们榜单上的同学，轮流起来唱今天教的歌曲，唱的不好嘛…照旧。”</p>
+<p>“耶！”一些莫名其妙的欢呼声传来。仿佛没有上榜是他们这辈子最大的荣幸，可以想象，班上没上榜的同学还是占大多数，既然是大多数人的行径，我们似乎没有道德上进行谴责的理由。</p>
+<p>今天教学的曲目是“小白船”。</p>
+<p>“蓝蓝的天空，银河里。有只小白船……”</p>
+<p>九月是第一位，理所应当地第一个站起来唱。</p>
+<p>“九月同学唱得非常好，下一位。”</p>
+<p>那当然，九月心里想。</p>
+<p>小学的时候，九月一次路过高年级的教室里在听到到小白船，从此就喜欢上了这首歌。</p>
+<p>不管什么阶段，人们总喜欢定义一个自己之“最”。好像有了“最”，就有了理想，有了信念。</p>
+<p>“我最喜欢的歌是‘小白船’。”不管见到谁，九月都很骄傲地讲。</p>
+<p>有一次语文考试有一道题是写一个比喻句。</p>
+<p>九月写的是“晨星像灯塔一样，照亮我们远行。”</p>
+<p>没想到语文老师似乎感到非常困惑“晨星？灯塔？晨星跟灯塔有什么相似的？你这个不能叫比喻句。”</p>
+<p>“可这是‘小白船’里写的呀？”</p>
+<p>“小白船？？我们哪篇课文是小白船？”</p>
+<p>……</p>
+<p>“再想想？还唱不出来吗？”</p>
+<p>不知什么时候，旁边的欧阳雪已经占了起来。看来已经轮到欧阳雪唱了。</p>
+<p>“桨儿桨儿看不见…看不见…”雪好像很吃力。</p>
+<p>“看不见什么呀？”</p>
+<p>零散的笑声传来。</p>
+<p>九月看到雪的脸涨得鼓鼓地，绷得如满弓的弦。</p>
+<p>“船上也没帆，飘呀，飘呀…”九月小声在下面唱了起来。</p>
+<p>那一刻，好像是雪收到了九月递来的炭。</p>
+<p>雪呆呆地盯着九月的眼睛几秒钟，然后窃窃地看了看老师，接着把五音不全的小白船唱了下去。</p>
+<p>“马马虎虎，就算你唱完了吧。”老师的话一锤定音。</p>
+<p>雪很快坐下身子，偷偷地朝九月这边望了一眼，但没有说话，仿佛惊魂未定的样子。</p>
+<p>不知道为什么，九月有一种满足感，就要像一条跃龙门的鲤鱼，总离龙门还差那么点，自己推波助澜算是把鱼跃过去了。</p>
+<p>雪就是一条鱼？奇怪的想法，雪怎么会是鱼呢。</p>
+<p>“谢谢你。”突然一个声音从耳边传来，打断了九月漂泊的思绪。</p>
+<p>“噢，没什么。你…不喜欢唱歌吗？”</p>
+<p>雪晃晃脑袋。“有什么喜不喜欢呢？不感兴趣罢了。”</p>
+<p>“唱歌多有意思啊，你怎么不喜欢呢？”</p>
+<p>“那语文多有意思啊，你怎么不喜欢呢？”</p>
+<p>以彼之道，还施彼身，这仿佛是辩论界最狠毒的招数。</p>
+<p>但九月什么也没回应，她一点也不生气。</p>
+<p>因为觉得有什么东西在慢慢发生变化。从那以后，她和雪的话慢慢多了起来。</p>
+<p>有一天，九月突然问雪。“你说，怎么才能让我对语文有兴趣呢？”</p>
+<p>“你可以多写写习作，陶冶陶冶文学琴操嘛。”</p>
+<p>“写作什么的，我最不喜欢了。”</p>
+<p>“本来我也不喜欢，后来喜欢上一位作家。”</p>
+<p>“谁呀？”</p>
+<p>“贾采和，现在很红的作家啦。”</p>
+<p>“唔…”雪对于不知道的事物总是这个回应。</p>
+<p>“你不知道呀？他经常在《新芽》上连载小说的，我很喜欢他的作品的。”</p>
+<p>“你也看《新芽》？”</p>
+<p>“嗯，这一期就有贾的新作《芦西外传》呢!好看讲一个少年独自去旅行的故事。”</p>
+<p>“唔…那挺棒的。”</p>
+<p>雪看到新鲜的作品就好像薇龙看到宋慧乔的项链一样，九月想。</p>
+<p>没个猎人都有自己对口的猎物吧？虽然这个比喻怎么不恰当，但我的猎物时什么呢？</p>
+<p>这可不是一时半会有答案的问题。</p>
+<p>总之，就这样过着过着，三个月快过去了。</p>
+<p>快学期末的一天早上，她突然在桌上看到一个新笔记本，上面用秀美的字迹写着：</p>
+<blockquote>
+<p>我每天把纸船一个个放在急流的溪中。</p>
+</blockquote>
+<blockquote>
+<p>我用大黑字写我的名字和我住的村名在纸船上。</p>
+</blockquote>
+<p>九月知道这是来自鱼的礼物，但为 什么今天他要送自己这份礼物呢？</p>
+<p>(本章完）</p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a href="./第三章：雪.html" class="mobile-nav-chapters previous">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="./第五章：鱼.html" class="mobile-nav-chapters next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="./第三章：雪.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="./第五章：鱼.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+    </body>
+</html>

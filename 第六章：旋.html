@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>第六章：旋 - </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+
+        <!-- MathJax -->
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = localStorage.getItem('theme');
+            if (theme == null) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = localStorage.getItem('sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="./楔子：班车时间表.html"><strong>1.</strong> 楔子：班车时间表</a></li><li><a href="./第一章：燕.html"><strong>2.</strong> 第一章：燕</a></li><li><a href="./第二章：雾.html"><strong>3.</strong> 第二章：雾</a></li><li><a href="./第三章：雪.html"><strong>4.</strong> 第三章：雪</a></li><li><a href="./第四章：船.html"><strong>5.</strong> 第四章：船</a></li><li><a href="./第五章：鱼.html"><strong>6.</strong> 第五章：鱼</a></li><li><a href="./第六章：旋.html" class="active"><strong>7.</strong> 第六章：旋</a></li><li><a href="./第七章：阳.html"><strong>8.</strong> 第七章：阳</a></li><li><a href="./第八章：问.html"><strong>9.</strong> 第八章：问</a></li><li><a href="./第九章：旅途.html"><strong>10.</strong> 第九章：旅途</a></li><li><a href="./第十章：风月.html"><strong>11.</strong> 第十章：风月</a></li><li><a href="./第十一章：昔日.html"><strong>12.</strong> 第十一章：昔日</a></li><li><a href="./第十二章：见习.html"><strong>13.</strong> 第十二章：见习</a></li><li><a href="./第十三章：永安路1538.html"><strong>14.</strong> 第十三章：永安路1538</a></li><li><a href="./第十六章：实习生.html"><strong>15.</strong> 第十六章：实习生</a></li><li><a href="./第十七章：高速.html"><strong>16.</strong> 第十七章：高速</a></li><li><a href="./第十八章：千禧广场.html"><strong>17.</strong> 第十八章：千禧广场</a></li><li><a href="./第十九章：似然.html"><strong>18.</strong> 第十九章：似然</a></li><li><a href="./第二十章：一物降一物.html"><strong>19.</strong> 第二十章：一物降一物</a></li><li><a href="./第二十一章：欢迎宴.html"><strong>20.</strong> 第二十一章：欢迎宴</a></li><li><a href="./第二十二章：邀约.html"><strong>21.</strong> 第二十二章：邀约</a></li><li><a href="./第二十三章：瑾瑜.html"><strong>22.</strong> 第二十三章：瑾瑜</a></li><li><a href="./第二十四章：平行宇宙.html"><strong>23.</strong> 第二十四章：平行宇宙</a></li><li><a href="./第二十五章：宿命.html"><strong>24.</strong> 第二十五章：宿命</a></li><li><a href="./第二十六章：约会.html"><strong>25.</strong> 第二十六章：约会</a></li><li><a href="./第二十七章：赴约.html"><strong>26.</strong> 第二十七章：赴约</a></li><li><a href="./第二十八章：私心.html"><strong>27.</strong> 第二十八章：私心</a></li><li><a href="./第二十九章：献血.html"><strong>28.</strong> 第二十九章：献血</a></li><li><a href="./第三十章：意外.html"><strong>29.</strong> 第三十章：意外</a></li><li><a href="./第三十一章：永别.html"><strong>30.</strong> 第三十一章：永别</a></li><li><a href="./第三十二章：摊牌.html"><strong>31.</strong> 第三十二章：摊牌</a></li><li><a href="./第三十三章：转机.html"><strong>32.</strong> 第三十三章：转机</a></li><li><a href="./第三十四章：启程.html"><strong>33.</strong> 第三十四章：启程</a></li><li><a href="./第三十五章：梧桐树大街.html"><strong>34.</strong> 第三十五章：梧桐树大街</a></li><li><a href="./第三十六章：地铁.html"><strong>35.</strong> 第三十六章：地铁</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush"></i>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="./第六章：旋.html#第六章-旋" id="第六章-旋"><h2>第六章 旋</h2></a>
+<p>很快，期末考也结束了。九月依然是第一名。</p>
+<p>但九月很快就淡忘了同学的羡慕，淡忘了老师的表扬。</p>
+<p>寒假里的一天，妈妈照例上班去了，九月一个人在家思考。</p>
+<p>她总觉得，前几天自己复习的时候，特意撇开一样东西不管。那时候自己倒是能集中精力，因为有考试这一最终目标在。</p>
+<p>而现在，尘埃落定，该到来的问题还是会到来。</p>
+<p>就像这空气中的电波…</p>
+<p>曾经有一段时间，九月很喜欢听广播，尤其爱听每天中午的《动旋》栏目。</p>
+<p>《动旋》是一档音乐栏目，主题是提供最新最潮的音乐，而且九月最喜欢节目的主持人芸。</p>
+<p>这档节目最大的特点，就是主持人擅长把音乐的内容与心灵的感受联系起来。</p>
+<p>芸曾经说，音乐的一个重要作用是将人们的心拉近在一起，好的音乐不仅是创作者对听众的述说，也是听众之间联系的纽带。</p>
+<p>芸也经常在节目中读听众的来信，很多听众都会在来信中要求点播某首歌曲，并且分享出自己对这首音乐的理解。</p>
+<p>九月经常听到芸或其他一些听众分享的心路历程，偶尔与自己的体会相符时，便会心有戚戚，十分欣喜。</p>
+<p>这种感觉，和解开谜底的感觉若有相似。</p>
+<p>记得有一次，一位听众来信提到自己非常喜欢《爱在西元前》。</p>
+<p>九月也爱听这首歌，不过她除了朦胧地好听之外，再也想不到其他的词形容。</p>
+<p>芸读完来信之后，也分享起自己的感受，当时她讲了一个短短的故事。</p>
+<p>“大概几年前，我们班（广播电视班）的同学还在准备相关考试。然后，每天早上都会有早自习安排，但是老师不会来，同学们自己坐到教室里看看书。</p>
+<p>“到了后来，大家自习得也疲倦了，于是就安排有一位同学会准备好磁带，放歌曲给大家听。</p>
+<p>“虽然我现在是音乐节目主持人，但当时我对流行音乐其实并不感兴趣。流行歌曲嘛，无非就是俗套的旋律加上爱过来恨过去的歌词。</p>
+<p>“直到有一天早晨，我正复习得心烦意乱的时候。一首从未听过的旋律从远方传来，似乎每一个音符都敲打在我心坎上。</p>
+<p>“如吟诵体似的前奏，由远至近；轻柔而略带伤感的吟唱，辗转回荡；忽如其来的变奏，破朔迷离的诉说……最神奇的是，我努力去听歌词却没完整听懂一句。</p>
+<p>“于是我很快找到那位同学问这首是什么歌曲，他答道是最近新出的《爱在西元前》。</p>
+<p>“我又问这西元是个什么东西？他表示自己也是因为好奇才刚去查的资料，台湾的叫法叫公元纪年叫做西元纪年。所以西元前就是公元前的意思。</p>
+<p>“回忆就这么多，现在想想，如果叫‘爱在公元前’会不会很老土的感觉？好了，那我们来欣赏这首让这位来信听众都有特别感触的旋律…”</p>
+<p>“芸似乎有种魔力，能把音乐变成绝妙的文字表达出来”，九月又回想起《新芽》上那副竹林间的阳光的插画，“希望有一天我能把那幅画也表达出来。”</p>
+<p>或许就是因为芸有这样的天赋才去做了音乐节目主持人吧。</p>
+<p>其实九月对《动旋》这个节目的名字也一直弄不明白，觉得应该叫“音乐快线”或者“音乐心情”什么的更能理解。</p>
+<p>终于，有一位听众也按捺不住，写信问芸这个问题。</p>
+<p>“既然大家都是喜欢音乐的人，”芸在点播里回应道，“那我们就以接下来这首歌做解释啦。”</p>
+<p>然后，她放了一首《旋木》。作为资深听众的九月瞬间就变明白：动感的旋律。</p>
+<p>后来，上初中了，由于午间不回家吃饭，九月听广播的机会变少了许多。</p>
+<p>就像这空气中的电波。回到现实中，她想。</p>
+<p>你不关注它时，仿佛它根本就不存在。而当你拿起手中的半导体设备将电波信号转化成声音时，它又仿佛一直存在。</p>
+<p>“小小少年，很少烦恼…”，她第一次打开收音机就听到在放一首关于烦恼的歌。</p>
+<p>随后主持人也开始分享自己对烦恼的见地，他幼年时从来感觉不到烦恼为何物，但是有一次无意中弄丢了一个铅笔盒，从此懊恼了好些天。然后其他的烦恼也接踵而至了。</p>
+<p>总结起来就是说，烦恼好像藏在一个魔盒里。等你到了一定年纪，这个魔盒就会被打开。对他来说，丢铅笔盒这件事就如同魔盒的钥匙。</p>
+<p>九月有点害怕她是不是也摸索到了这魔盒的钥匙。</p>
+<p>我担心什么呢？她心里想。一个要好的朋友走了喔？</p>
+<p>就算拿着钥匙好了，她也希望远离那烦恼的魔盒。</p>
+<p>这时候，突然电话铃响了起来。</p>
+<p>九月关掉收音机，拿起电话的听筒。</p>
+<p>“喂，请问韩九月在家吗？”</p>
+<p>九月听到了雪的声音。</p>
+<p>“是欧阳吗？我是九月那。”</p>
+<p>“噢，那太好了。我在这边基本安定好啦，就等开学去上课了。”</p>
+<p>“唔……真棒。那里……学校……还好吧？”还没从回忆中醒过来的九月，有点语无伦次。</p>
+<p>“嗯，学校条件倒是不错的。只不过就跟我同你说的一样……”</p>
+<p>“怎么了？”</p>
+<p>“侯门一入深似海，从此就…”</p>
+<p>这时候外面传来了妈妈从拉开铁门的声音，所以九月一下子没听清。</p>
+<p>“噢，妈妈回来了，我们下次再讲吧。一切顺利！”</p>
+<p>说完九月赶紧挂了电话，匆匆走到房间里。</p>
+<p>很奇妙的感觉，远在天边的人，在电话两端基本上是零距离。</p>
+<p>虽然不是第一次打电话，但却头一次感觉电话是如此奇妙。</p>
+<p>她拼命翻开一本语文读本，印象中里面好像有句话能诠释她当时的心情。</p>
+<blockquote>
+<p>天涯若比邻</p>
+</blockquote>
+<p>是啊，反正还能交流嘛，怕什么呢？</p>
+<p>对于雪的最后一句话，九月只记得前半句大概是说进了星火读书就出不来啦，后面是什么大概也无关紧要吧。</p>
+<p>想到这里，九月的心情似乎好了很多，整个人也恢复了往日的活力。</p>
+<p>第二学期开学的时候，由于没有新同学到来，九月同桌的座位也就一直空缺着。</p>
+<p>刚开学的那些天天气还是比较冷，许多同学课间的时候便会搬着凳子到外面
+晒太阳。</p>
+<p>九月有时候也会同薇龙一道出去晒晒太阳。</p>
+<p>“冬天里晒太阳真是最美好的事！”薇龙说。</p>
+<p>“哈，我记得去年热的时候你还嫌太阳太大了呢。”</p>
+<p>“那是！太阳就应该冬天出来嘛，夏天要太阳做什么。”</p>
+<p>那人是不是也一样？我需要你的时候，就欢喜同你做朋友；一旦有什么冒犯了，马上就翻脸不认人？</p>
+<p>想到这里，九月觉得薇龙这种说法挺别扭，但她脸上只是笑笑。</p>
+<p>“雪也不喜欢太阳呢？”薇龙似有意无意地说道。</p>
+<p>“噢？那他喜欢什么呀？”</p>
+<p>“不知道呢。不过有一次谈起来哈，我告诉他我出生在多风的<em>月份</em>里，所以喜欢风。然后他也说喜欢风呢，嗯，就是这样。”</p>
+<p>九月什么话也没说，她忽然回想起，雪走的前两天，薇龙与平常的异状。</p>
+<p>好像她早就知道似的。莫非他们……</p>
+<p>“诶，九月你生日是哪天啊，还没跟我说过嘛。”</p>
+<p>“噢，2.26。”九月漫不经心地答道。</p>
+<p>“咦？不是九月份那？那是双鱼座？双鱼和天蝎……啊”薇龙忽然涨红了脸，“坏了。”</p>
+<p>“怎么了？”</p>
+<p>“噢，没什么。”</p>
+<p>略带一点尴尬的对话就这么结束了。</p>
+<p>九月一放学没与同薇龙一起走，而是自己回到了家，因为妈妈说好了要晚点回来，所以自己带好了钥匙。</p>
+<p>九月回到小房间里，对着桌子发呆。</p>
+<p>不用想了，双鱼、巨蟹和天蝎，两个已经很明了，剩下那个必定是另外一个人。</p>
+<p>雪要走的时候，薇龙好像早就知悉了。</p>
+<p>风月？什么嘛？原来是拆开来的风月？</p>
+<p>这么多线索，一切已经很清楚了。</p>
+<p>你们在一起也挺好，是我多费心了。</p>
+<p>九月觉得自己现在就是一个少年侦探，就像柯南一样，从一堆离奇的事件中挖出一个深藏的结果。</p>
+<p>但她又感觉到自己忽视了破案过程中最重要的一个东西。</p>
+<p>柯南从来不缺乏推断本事，阻挡他的却往往只是细微的证据。</p>
+<p>她目前的推断只是个猜测，毫无证据可言。</p>
+<p>然而就像感情上的事理智做不了住，当你忽然看到了所谓的真相的时候，证据已经不再重要。</p>
+<p>不知什么时候妈妈已经从外面回来了，这时候妈妈正招呼九月到客厅去吃饭。</p>
+<p>“呀，九月你是怎么啦？一脸的阴霾像。”</p>
+<p>“啊……今天上体育课跑步跑累了。”</p>
+<p>“那，来赶紧多吃点。要做阳光的九月！”</p>
+<p>“嗯。”</p>
+<p>听了妈妈的话，心情倒是舒坦了很多。吃完后，九月主动提出要洗碗，妈妈便继续去忙工作上的事情。</p>
+<p>九月从小就经常帮家里做家务，不过上初中以后妈妈担心课业压力，也就不经常要求九月洗碗了。</p>
+<p>总得说来，洗一两个碗对九月来说自然不在话下，她一边洗碗还一边哼着歌。</p>
+<p>不过等到九月回到小房间时，似乎天气又变成晴转多云了。</p>
+<p>（本章完）</p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a href="./第五章：鱼.html" class="mobile-nav-chapters previous">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="./第七章：阳.html" class="mobile-nav-chapters next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="./第五章：鱼.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="./第七章：阳.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+    </body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>第三十章：意外 - </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+
+        <!-- MathJax -->
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = localStorage.getItem('theme');
+            if (theme == null) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = localStorage.getItem('sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="./楔子：班车时间表.html"><strong>1.</strong> 楔子：班车时间表</a></li><li><a href="./第一章：燕.html"><strong>2.</strong> 第一章：燕</a></li><li><a href="./第二章：雾.html"><strong>3.</strong> 第二章：雾</a></li><li><a href="./第三章：雪.html"><strong>4.</strong> 第三章：雪</a></li><li><a href="./第四章：船.html"><strong>5.</strong> 第四章：船</a></li><li><a href="./第五章：鱼.html"><strong>6.</strong> 第五章：鱼</a></li><li><a href="./第六章：旋.html"><strong>7.</strong> 第六章：旋</a></li><li><a href="./第七章：阳.html"><strong>8.</strong> 第七章：阳</a></li><li><a href="./第八章：问.html"><strong>9.</strong> 第八章：问</a></li><li><a href="./第九章：旅途.html"><strong>10.</strong> 第九章：旅途</a></li><li><a href="./第十章：风月.html"><strong>11.</strong> 第十章：风月</a></li><li><a href="./第十一章：昔日.html"><strong>12.</strong> 第十一章：昔日</a></li><li><a href="./第十二章：见习.html"><strong>13.</strong> 第十二章：见习</a></li><li><a href="./第十三章：永安路1538.html"><strong>14.</strong> 第十三章：永安路1538</a></li><li><a href="./第十六章：实习生.html"><strong>15.</strong> 第十六章：实习生</a></li><li><a href="./第十七章：高速.html"><strong>16.</strong> 第十七章：高速</a></li><li><a href="./第十八章：千禧广场.html"><strong>17.</strong> 第十八章：千禧广场</a></li><li><a href="./第十九章：似然.html"><strong>18.</strong> 第十九章：似然</a></li><li><a href="./第二十章：一物降一物.html"><strong>19.</strong> 第二十章：一物降一物</a></li><li><a href="./第二十一章：欢迎宴.html"><strong>20.</strong> 第二十一章：欢迎宴</a></li><li><a href="./第二十二章：邀约.html"><strong>21.</strong> 第二十二章：邀约</a></li><li><a href="./第二十三章：瑾瑜.html"><strong>22.</strong> 第二十三章：瑾瑜</a></li><li><a href="./第二十四章：平行宇宙.html"><strong>23.</strong> 第二十四章：平行宇宙</a></li><li><a href="./第二十五章：宿命.html"><strong>24.</strong> 第二十五章：宿命</a></li><li><a href="./第二十六章：约会.html"><strong>25.</strong> 第二十六章：约会</a></li><li><a href="./第二十七章：赴约.html"><strong>26.</strong> 第二十七章：赴约</a></li><li><a href="./第二十八章：私心.html"><strong>27.</strong> 第二十八章：私心</a></li><li><a href="./第二十九章：献血.html"><strong>28.</strong> 第二十九章：献血</a></li><li><a href="./第三十章：意外.html" class="active"><strong>29.</strong> 第三十章：意外</a></li><li><a href="./第三十一章：永别.html"><strong>30.</strong> 第三十一章：永别</a></li><li><a href="./第三十二章：摊牌.html"><strong>31.</strong> 第三十二章：摊牌</a></li><li><a href="./第三十三章：转机.html"><strong>32.</strong> 第三十三章：转机</a></li><li><a href="./第三十四章：启程.html"><strong>33.</strong> 第三十四章：启程</a></li><li><a href="./第三十五章：梧桐树大街.html"><strong>34.</strong> 第三十五章：梧桐树大街</a></li><li><a href="./第三十六章：地铁.html"><strong>35.</strong> 第三十六章：地铁</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush"></i>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="./第三十章：意外.html#第三十章意外" id="第三十章意外"><h2>第三十章：意外</h2></a>
+<p>龚磊难以置信地看着九月脚边的箱子，只感觉到一阵寒意从脚底出发逼近自己的脑门，他不由自主地耸起了肩，打了一个十足的冷战。</p>
+<p>“这箱子里装的不会是…”，龚磊没有抬头看九月，指着箱子直接问道。</p>
+<p>“嗯，没错，所有的设备”，九月淡定地回答道，“你那个咖啡也不要喝了，我在隔壁假日酒店订了一个房间，现在就去吧”</p>
+<p>“不不不你等等”，龚磊抬起头，四下环顾了一下，窗外依旧下着雨，咖啡馆里的人似乎比刚才要多一些，让他感到些许心安，“你这也太夸张了，不能等几天吗？”</p>
+<p>“我的龚磊等不了”，九月没有多余的话语，斩钉截铁地回答道。</p>
+<p>龚磊并没有被九月的气势所吓到，他只是觉得今天风衣加身的九月配上刚才坚决的回答，让自己有一种黑帮电视剧的既视感。他整理了一下自己复杂的心情，盘算着该怎么办。这时，龚磊突然想到芮蕾一会儿还会来千禧广场找自己，想到这里，他突然觉得油然而生了一种莫名的安全感。如果到时候芮蕾也在，他好像就有勇气接受这个立即就去献血的“挑战”了。“早死早超生嘛，反正今天周日，烦心事就一并做了，明天就能好好上班了”，龚磊横生的勇气促使他这么想。</p>
+<p>“那我先打个电话。我一点多约了人，让她一起来吧，稍微等她一会儿行吗？”，龚磊深吸了一口气，边说边拿出了手机。</p>
+<p>九月撇了撇嘴，然后点了点头。</p>
+<p>“喂，芮蕾。”……“嗯，是我。对了，你一会儿能不能到……到假日酒店来找我？”……“对，就千禧广场那个”……“没为什么呀，你来了就知道了”……“嗯，老时间，你早点儿来也没关系”……“嗯，我在大堂等你”……“喂？你怎么不说话？没问题吧？”……“嗯，好，那一会儿见，拜拜”</p>
+<p>龚磊挂了电话，长舒了一口气。他看了看九月，发现她没在看他，而是找了本位子边上的杂志看了起来。“她看我们这里的杂志不知道是什么感觉”，他好奇地想。想着离芮蕾来还有近一个小时，龚磊便起身向点单的地方走去。“您好，麻烦要一个巧克力麦芬”，龚磊对服务员说道。</p>
+<p>假日酒店的大堂，似乎并没有受到下雨的影响，还是和平常一样的热闹。离和芮蕾约的时间还有一会儿，龚磊和九月已经来到大堂坐下等着了。龚磊是第一次来假日酒店，往常经过酒店门口总是能看到形形色色的人或驻足或穿梭于门内门外，他们或着正装，或着便服，但男士大多踏着一双皮鞋。今天坐在大堂，龚磊觉得看到的来来往往的人和往常也没有什么两样，只是似乎老外的比例更多一些。身边的沙发上，九月正在闭目养神。对面的沙发上坐着一个穿着栗色灯芯绒西装的男人，总时不时大量一下龚磊和九月。龚磊被他看得有点不爽，站起身来走到大堂中间，正对着入口的转门站定，双臂交叉在胸前。</p>
+<p>不一会儿，转门里出现了一个熟悉的身影，是芮蕾。龚磊一眼就发现了芮蕾，因为她今天穿了一条红裙子。芮蕾的上身穿了一件白色的衬衫，衬衫领口和袖口都有整齐划一的黑边作点缀。她的胸前挂着一个金属的小猴挂坠，在胸前一晃一晃的，分外可爱。</p>
+<p>“芮蕾”，龚磊打开了交叉的双臂，向她伸手示意。</p>
+<p>“亲…龚磊”，芮蕾刚想快跑到龚磊面前，却看到龚磊身后的九月从沙发上站了起来，顿时有些不高兴，便放慢了脚步，走到了龚磊身边。</p>
+<p>龚磊发现了芮蕾的变化，便也顺着她的视线回头看，看见了站起的九月，他便转身牵起了芮蕾的手，向九月走去。</p>
+<p>芮蕾蓦然发现龚磊拉起了自己的手，羞得不知如何是好，连看到龚磊和九月在一起的不高兴都全然忘记了，只知道跟着龚磊往前走了。</p>
+<p>“这是哪一个？”，芮蕾边走边悄悄地问龚磊。</p>
+<p>“那个世界那个”，龚磊回答。</p>
+<p>九月没有站在原地，看人都到齐了，她摸了摸风衣口袋里的房卡，就拎起箱子走向了龚磊和芮蕾。一阵简短的互相介绍之后，三个人便走向了大堂旁边的电梯。</p>
+<p>二十分钟后，龚磊便已经卷起了袖管坐在了九月所订的房间的椅子上。芮蕾站在他的身后，双手互握放在自己的身前。龚磊回头示意芮蕾不用紧张，让她把双手搭在自己的肩膀上，芮蕾便照做了。九月坐在龚磊对面的另一张椅子上，他俩中间的桌子上的台灯、花草和电话机都被移开，摆了抽血的机器。龚磊觉得口袋里的手机硌得慌，拿出来也放在了桌子上。</p>
+<p>九月订的是一个豪华套间，龚磊坐在椅子上，心中不由得感叹自己不是来住的，房间那宽敞的步入式衣帽间，独立的视听设备，床边、桌边和壁式的智能触控液晶面板等诸多奢华的配置可算是浪费了。所幸舒适的扶手椅和沙发并没有浪费，龚磊调整了一下坐姿，发现怎么坐都舒服。房间里特大的双人床也没有被浪费，摆满了九月从箱子里拿出来的各种血袋、针管、橡皮管、棉球、酒精等等，和它们的备用品。还有一只稍小一些的箱子，是九月说用来冷藏抽出来的血液的。</p>
+<p>龚磊在来房间的路上，把事情的来龙去脉对芮蕾讲了，芮蕾一直没有说话，只是始终默默地看着他，把他的手握得紧紧的。九月在一旁也没有插话。到了房间，九月开门进去的时候，芮蕾拉着龚磊走慢了几步，悄悄地对他说：“没事，亲爱的，我陪着你”。</p>
+<p>龚磊此刻坐在房间里，心里觉得暖暖的。对面的九月似乎做完了准备工作，便转过身看着龚磊：“准备好了吧？刚才跟你们解释的，一共需要抽500毫升，可能比一般的献血要多一些，没问题吧？”龚磊感觉到身后的芮蕾可能想说什么，他赶紧把另一只手放在芮蕾在自己肩膀上的手上，她便终究没有说出那句话。“嗯，没问题”，龚磊回答。</p>
+<p>九月于是按部就班地打开机器，开始操作。龚磊很好奇九月为什么看上去对抽血的操作那么娴熟，她在她的世界的职业会不会是医生或者护士呢？不过想到她为了如此重要的事，即使原本不会，也一定做好了万全的准备去学会了，也就不过多的疑惑了。</p>
+<p>虽然没有献过血，但在龚磊看来一切都很顺利。针扎进手臂上的血管的那刻他没有感觉到疼，因为他的注意力都被芮蕾的手在自己肩膀上的一缩给吸引了。“芮蕾一定紧张坏了”，他想。看着自己的血液从手臂里顺着透明的塑料管慢慢地进入血袋，在机器上随着机器上那个摆血袋的平台的摇摆一会儿奔流到袋子的这头，一会儿奔流到袋子的那头，龚磊自己紧绷的心也放松了下来。“我的血看上去怎么有些黑黑的”，他乐呵呵地想。</p>
+<p>龚磊静静地盯着血袋，看着里面的血越抽越多，眼神便慢慢地失焦，血袋在眼前变成了模糊的视野里的一片红。他觉得这片红好像刚才在酒店大堂里见到的芮蕾的红裙子。芮蕾穿着它在灰暗的阴雨天走进酒店的那一刹那，龚磊觉得整个世界都是灰色的，只有芮蕾是彩色的，就像他此刻的视界。看着看着，龚磊觉得眼皮有点抬不动了，眼前红色的世界也慢慢地模糊，缓缓地消失。龚磊想留住它，但好像浑身使不上力气，只能看着红色在慢慢褪去，慢慢被灰暗吞噬。“芮蕾，不要走，不要走”，龚磊使尽了最后的力气在心里喊了一声，便失去了意识。</p>
+<p>“龚磊，你怎么了？龚磊？”，芮蕾发现了龚磊的异样，她紧张地呼喊，龚磊却似乎没有应答。她顿时紧张了，用手轻轻推了推龚磊，他便瘫倒在了椅子里。</p>
+<p>“你！你快看看她怎么了！”，芮蕾着急了，不顾形象地对着九月喊道。</p>
+<p>九月也在芮蕾提醒她之前及时地看出了龚磊的不对劲，早早地停止了抽血。在简单检查了龚磊的体征以后，她思索了几秒钟后，恍然大悟，从箱子里拿出了血压计，以迅雷不及掩耳的速度给龚磊佩戴上。</p>
+<p>“他有低血压？”，九月剑一样的目光看向芮蕾。</p>
+<p>芮蕾似乎被九月震到了。“我…我不知道…没有啊…”，她说。</p>
+<p>“他血压太低，休克了。我马上给他急救，你快出门，去买紧急升压药”，九月以刻不容缓的语气说道。</p>
+<p>“升压药…”，芮蕾愣了一下，然后便箭也似的往房间门口冲去。开门的那一刹那，她回头看了一眼龚磊，发现九月已经开始让龚磊平卧在了地板上，垫高了他的双腿，开始急救了。芮蕾开门的手有一些颤抖，但她顾不上这么多了，头也不回地冲了出去。</p>
+<p>没几分钟，芮蕾便跑到了千禧广场上。“药店…药店…哪里有药店呢…哪里有药店呢！”，她急得像热锅上的蚂蚁。她打算跑到路口去碰碰运气。到了路口，芮蕾远远地看到马路对面有一家店，门口的灯箱写着“药”字，便不顾一切地冲了过去……</p>
+<p>酒店房间里，九月奋力地抢救着龚磊，把她所知道的方法几乎都用上了。须臾，龚磊似乎恢复了些意识。九月刚想趁龚磊恢复了意识给他喝些水扩充血容量的时候，龚磊放在桌上的手机响了。九月没打算接，只是被手机声吸引瞥了一眼，却看到屏幕上赫然显示着来电的是芮蕾。她迅即地给龚磊喂了少许水，从桌子上拿过手机，接通了电话。</p>
+<p>“喂，怎么啦？”，九月不耐烦地问道。</p>
+<p>“怎么是个女的啊？”，电话那头是个男声，这句话好像是远离听筒在对自己自言自语。“啊，那个，喂，你是龚磊吗？”，陌生的男声似乎自言自语完了，继续问道。</p>
+<p>“没错，什么事你说”，九月有些疑惑，这个人是谁？芮蕾不是去买药了吗，怎么手机会在一个男人手上？但是事急从权，九月便答应了下来。</p>
+<p>“哦，那个，这个手机的主人出车祸了，我看你是她手机上最近联系过的人，我们现在在去医院的路上，你要不要过来看看？”，电话里的男人喊也似地大声说道。</p>
+<p>“什么？！”，没等九月回答，躺在地上的龚磊好像听到了电话里传出来的声音，难以置信地大声喊道，然后，便眼前一黑，又晕了过去。</p>
+<p>（本章完）</p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a href="./第二十九章：献血.html" class="mobile-nav-chapters previous">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="./第三十一章：永别.html" class="mobile-nav-chapters next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="./第二十九章：献血.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="./第三十一章：永别.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+    </body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>第二章：雾 - </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+
+        <!-- MathJax -->
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = localStorage.getItem('theme');
+            if (theme == null) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = localStorage.getItem('sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="./楔子：班车时间表.html"><strong>1.</strong> 楔子：班车时间表</a></li><li><a href="./第一章：燕.html"><strong>2.</strong> 第一章：燕</a></li><li><a href="./第二章：雾.html" class="active"><strong>3.</strong> 第二章：雾</a></li><li><a href="./第三章：雪.html"><strong>4.</strong> 第三章：雪</a></li><li><a href="./第四章：船.html"><strong>5.</strong> 第四章：船</a></li><li><a href="./第五章：鱼.html"><strong>6.</strong> 第五章：鱼</a></li><li><a href="./第六章：旋.html"><strong>7.</strong> 第六章：旋</a></li><li><a href="./第七章：阳.html"><strong>8.</strong> 第七章：阳</a></li><li><a href="./第八章：问.html"><strong>9.</strong> 第八章：问</a></li><li><a href="./第九章：旅途.html"><strong>10.</strong> 第九章：旅途</a></li><li><a href="./第十章：风月.html"><strong>11.</strong> 第十章：风月</a></li><li><a href="./第十一章：昔日.html"><strong>12.</strong> 第十一章：昔日</a></li><li><a href="./第十二章：见习.html"><strong>13.</strong> 第十二章：见习</a></li><li><a href="./第十三章：永安路1538.html"><strong>14.</strong> 第十三章：永安路1538</a></li><li><a href="./第十六章：实习生.html"><strong>15.</strong> 第十六章：实习生</a></li><li><a href="./第十七章：高速.html"><strong>16.</strong> 第十七章：高速</a></li><li><a href="./第十八章：千禧广场.html"><strong>17.</strong> 第十八章：千禧广场</a></li><li><a href="./第十九章：似然.html"><strong>18.</strong> 第十九章：似然</a></li><li><a href="./第二十章：一物降一物.html"><strong>19.</strong> 第二十章：一物降一物</a></li><li><a href="./第二十一章：欢迎宴.html"><strong>20.</strong> 第二十一章：欢迎宴</a></li><li><a href="./第二十二章：邀约.html"><strong>21.</strong> 第二十二章：邀约</a></li><li><a href="./第二十三章：瑾瑜.html"><strong>22.</strong> 第二十三章：瑾瑜</a></li><li><a href="./第二十四章：平行宇宙.html"><strong>23.</strong> 第二十四章：平行宇宙</a></li><li><a href="./第二十五章：宿命.html"><strong>24.</strong> 第二十五章：宿命</a></li><li><a href="./第二十六章：约会.html"><strong>25.</strong> 第二十六章：约会</a></li><li><a href="./第二十七章：赴约.html"><strong>26.</strong> 第二十七章：赴约</a></li><li><a href="./第二十八章：私心.html"><strong>27.</strong> 第二十八章：私心</a></li><li><a href="./第二十九章：献血.html"><strong>28.</strong> 第二十九章：献血</a></li><li><a href="./第三十章：意外.html"><strong>29.</strong> 第三十章：意外</a></li><li><a href="./第三十一章：永别.html"><strong>30.</strong> 第三十一章：永别</a></li><li><a href="./第三十二章：摊牌.html"><strong>31.</strong> 第三十二章：摊牌</a></li><li><a href="./第三十三章：转机.html"><strong>32.</strong> 第三十三章：转机</a></li><li><a href="./第三十四章：启程.html"><strong>33.</strong> 第三十四章：启程</a></li><li><a href="./第三十五章：梧桐树大街.html"><strong>34.</strong> 第三十五章：梧桐树大街</a></li><li><a href="./第三十六章：地铁.html"><strong>35.</strong> 第三十六章：地铁</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush"></i>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="./第二章：雾.html#第二章-雾" id="第二章-雾"><h2>第二章 雾</h2></a>
+<p>九月上了公交车，给售票的阿姨看了看月票，然后找了个座位坐下。</p>
+<p>“一个不在九月里出生的人，却叫这个名字。换谁也想不明白呀。”九月心里想。</p>
+<p>其实她不止一次问过妈妈，但妈妈总是说“九月，阳光明媚嘛”。一语带过。</p>
+<p>九月没敢再问下去。小时候九月沾着什么都要刨根问到底，可自从爸爸离开家里之后，九月就再也不敢问妈妈许多问题。</p>
+<p>九月不知道是什么变故。</p>
+<p>突然有一天，他们就开始吵了起来。</p>
+<p>九月闹也不管用，家里照样摔东西摔来摔去，没有一天是个安宁。</p>
+<p>九月心急了，把自己写了很久的小本子拿出来。</p>
+<p>不久以前，九月特地存了几个星期的零花钱，买了一本笔记本。</p>
+<p>“这本子花了我这么多钱，一定能让我梦想成真。”九月心想。</p>
+<p>“梦想？嗯，我的梦想是……”</p>
+<p>“小燕子，跟妈妈一起去南方过冬，爸爸已经筑好巢等着我们了……”</p>
+<p>九月的小故事已经快写好了，不过写到小燕子快回到南方的家时，再也写不下去了。</p>
+<p>“爸爸妈妈不要吵架”“不要吵架”。</p>
+<p>她在空白的页面上拼命的写着。</p>
+<p>果然，似乎有点黑色幽默的味道，父母果然不再吵架。第二天，爸爸就再也没回家住。</p>
+<p>九月把笔记本扔到了河里，从此决定再也不写什么去投稿了。</p>
+<p>……</p>
+<p>回到了家门口，看到楼下的单车不在，知道妈妈还没有回来。便坐在楼下等。</p>
+<p>小学的时候九月也曾自己带过钥匙，但有一次不知怎么的弄丢了，从此妈妈再也不放心让她带钥匙。</p>
+<p>“今天大概是我放学早了，就等等吧。”</p>
+<p>妈妈在家附近的一座研究所上班，虽然研究所的大门离家里不远，但是里面却很大。因此需要骑车去上班，研究所里有一个旧操场，九月孩提时代经常在那边玩耍。</p>
+<p>不过随着课业的紧张，去那边的机会也越来越少。</p>
+<p>“两年没进去玩了”，九月想。</p>
+<p>叮叮叮…</p>
+<p>虽然背对着声音传来的方向，九月也听出来这是妈妈的单车铃声。</p>
+<p>“就回来了？没多等吧？”妈妈笑着问九月。</p>
+<p>虽然是一直一个人带九月，但妈妈仿佛对生活依旧充满了百分百的热情。</p>
+<p>她爱笑，也爱逗九月笑。</p>
+<p>九月变得越来越懂事，也就越来越迎合母亲。母亲逗她的时候，她总是百依百顺地笑。不爱搭理她的时候，她就乖乖在一旁呆着。</p>
+<p>一个家里就她们两个，但看起来这就是一个完美的家。</p>
+<p>“嗯。我放学后跟同学走了一走，也刚回来。”</p>
+<p>“瞧妈妈给你买了什么？”说着妈妈从包里掏出一方物。</p>
+<p>九月接过来一看，是一本《新芽》。似乎为了怕读者误会，这本书的上方写着清清楚楚“百家青少年推荐读物”。</p>
+<p>“你现在读初中了，要多练练写作文了。这本书大家都说好，小言妈妈也给他买了。”</p>
+<p>小言是九月妈妈同事的孩子，小时候经常跟九月在旧操场玩。</p>
+<p>“嗯…好。”</p>
+<p>也许是小学时候受了那本笔记本的气的缘故，九月后来就一直不喜欢语文。对老师的指点批评她倒也满不在乎，反正除了语文，她都是一级棒。</p>
+<p>开学一个月以后，几乎没门科目都进行了第一番测试。九月除了在语文上略有偏颇之外，其他科目都是第一名。</p>
+<p>薇龙到是开心得很，每次下课总是拉着九月教她这教她那。她成绩似乎不见长进，或者说，她的成绩看不起她的努力。</p>
+<p>“没办法，有的人就是这样。”九月心想。</p>
+<p>雪倒也是个另外一个极端，他似乎天文地理什么都懂，尤其喜欢钻研文艺小说，但上课却不爱用功，给人的感觉就是不上不下。</p>
+<p>“欧阳雪，你要是把你杂七杂八的时间花在学习上，那肯定比现在好很多。”老师经常对着全班讲。</p>
+<p>九月也很不解，人要那么‘博学’有什么用。亚里士多德不是说过，知道的越多自己就显得越无知么。</p>
+<p>有时候她会问欧阳雪，你最喜欢什么科目。</p>
+<p>雪说当然是历史啦，你可以知道这个大将军，那个大英雄什么的。</p>
+<p>九月说那你最喜欢谁呢？</p>
+<p>雪说是法国的波拿马。</p>
+<p>这谁呀？不认识。</p>
+<p>雪说那VIC你认识吧？</p>
+<p>九月说，当然啦，是周渝民嘛。</p>
+<p>于是雪说那我比你厉害，我既知道波拿马，又认识VIC。但你只认识VIC，不知道波拿马。</p>
+<p>九月说好呀，那你厉害呗，我们期中考试见分晓。</p>
+<p>(本章完)</p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a href="./第一章：燕.html" class="mobile-nav-chapters previous">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="./第三章：雪.html" class="mobile-nav-chapters next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="./第一章：燕.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="./第三章：雪.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+    </body>
+</html>

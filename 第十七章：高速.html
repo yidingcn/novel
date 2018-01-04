@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>第十七章：高速 - </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+
+        <!-- MathJax -->
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = localStorage.getItem('theme');
+            if (theme == null) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = localStorage.getItem('sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="./楔子：班车时间表.html"><strong>1.</strong> 楔子：班车时间表</a></li><li><a href="./第一章：燕.html"><strong>2.</strong> 第一章：燕</a></li><li><a href="./第二章：雾.html"><strong>3.</strong> 第二章：雾</a></li><li><a href="./第三章：雪.html"><strong>4.</strong> 第三章：雪</a></li><li><a href="./第四章：船.html"><strong>5.</strong> 第四章：船</a></li><li><a href="./第五章：鱼.html"><strong>6.</strong> 第五章：鱼</a></li><li><a href="./第六章：旋.html"><strong>7.</strong> 第六章：旋</a></li><li><a href="./第七章：阳.html"><strong>8.</strong> 第七章：阳</a></li><li><a href="./第八章：问.html"><strong>9.</strong> 第八章：问</a></li><li><a href="./第九章：旅途.html"><strong>10.</strong> 第九章：旅途</a></li><li><a href="./第十章：风月.html"><strong>11.</strong> 第十章：风月</a></li><li><a href="./第十一章：昔日.html"><strong>12.</strong> 第十一章：昔日</a></li><li><a href="./第十二章：见习.html"><strong>13.</strong> 第十二章：见习</a></li><li><a href="./第十三章：永安路1538.html"><strong>14.</strong> 第十三章：永安路1538</a></li><li><a href="./第十六章：实习生.html"><strong>15.</strong> 第十六章：实习生</a></li><li><a href="./第十七章：高速.html" class="active"><strong>16.</strong> 第十七章：高速</a></li><li><a href="./第十八章：千禧广场.html"><strong>17.</strong> 第十八章：千禧广场</a></li><li><a href="./第十九章：似然.html"><strong>18.</strong> 第十九章：似然</a></li><li><a href="./第二十章：一物降一物.html"><strong>19.</strong> 第二十章：一物降一物</a></li><li><a href="./第二十一章：欢迎宴.html"><strong>20.</strong> 第二十一章：欢迎宴</a></li><li><a href="./第二十二章：邀约.html"><strong>21.</strong> 第二十二章：邀约</a></li><li><a href="./第二十三章：瑾瑜.html"><strong>22.</strong> 第二十三章：瑾瑜</a></li><li><a href="./第二十四章：平行宇宙.html"><strong>23.</strong> 第二十四章：平行宇宙</a></li><li><a href="./第二十五章：宿命.html"><strong>24.</strong> 第二十五章：宿命</a></li><li><a href="./第二十六章：约会.html"><strong>25.</strong> 第二十六章：约会</a></li><li><a href="./第二十七章：赴约.html"><strong>26.</strong> 第二十七章：赴约</a></li><li><a href="./第二十八章：私心.html"><strong>27.</strong> 第二十八章：私心</a></li><li><a href="./第二十九章：献血.html"><strong>28.</strong> 第二十九章：献血</a></li><li><a href="./第三十章：意外.html"><strong>29.</strong> 第三十章：意外</a></li><li><a href="./第三十一章：永别.html"><strong>30.</strong> 第三十一章：永别</a></li><li><a href="./第三十二章：摊牌.html"><strong>31.</strong> 第三十二章：摊牌</a></li><li><a href="./第三十三章：转机.html"><strong>32.</strong> 第三十三章：转机</a></li><li><a href="./第三十四章：启程.html"><strong>33.</strong> 第三十四章：启程</a></li><li><a href="./第三十五章：梧桐树大街.html"><strong>34.</strong> 第三十五章：梧桐树大街</a></li><li><a href="./第三十六章：地铁.html"><strong>35.</strong> 第三十六章：地铁</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush"></i>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="./第十七章：高速.html#第十七章-高速" id="第十七章-高速"><h2>第十七章 高速</h2></a>
+<p>龚磊与九月走在公司的地下车库。。。</p>
+<p>w公司作为知名IT外企，员工车库的车也不乏ABB之流，即便是破鞋路虎也是有的，但是据龚磊所知，除了两年前一辆法拉利，还真没有其他超跑光顾过公司的车库。</p>
+<p>“记得车位号嘛？“。</p>
+<p>”在第二排，不会认错的“ 九月一边走着一边说道。</p>
+<p>“恩...&quot;龚磊心里说着“那么好的车，确实不会认错”</p>
+<p>这还是龚磊第一次坐上超跑...上车前，龚磊特地看了眼车位号：A188，“运气真不错”</p>
+<p>九月系上安全带之后对龚磊说了句：“Mentor，坐好哦“，之后伴随着一声马达轰鸣，龚磊直接被按在了副驾的真皮座椅上。</p>
+<p>开车的九月再一次让龚磊另眼相看。虽然w公司到千禧广场的最佳路线是全程高速和市内快速路，但是这个点出门还是会被堵成翔的...然而九月的车硬是在车流中辗转腾挪，不断的加速变道超车，抢车头也丝毫不让...完全不像是普用意义上的“女司机”</p>
+<p>九月抽空瞄了两眼龚磊，发现这家伙的眼睛一直盯着仪表盘上的车速...九月知道龚磊之前让她啃书有点打发她的意思，相对的她也可以打打马虎眼就混过去，但一是认真看完多少能学到点东西，二是九月也想多留在w公司一段时间，毕竟，想找个人，却不知道名字，w公司那么多人，还是多点时间来的好，所以就没和龚磊计较。</p>
+<p>“Mentor，没事吧？不用紧张...”</p>
+<p>“哦...没...哪有....你的车不错呀？“龚磊还不想自己喜欢各种”吉利“数的事情告诉自己的Mentee，于是随口扯开了话题。</p>
+<p>“恩，跑车里面我最喜欢这辆了，很cool的造型，动力上也更出彩一些&quot;</p>
+<p>龚磊心里暗骂自己一句”自己不开车，为啥和这个小妮子扯车的事情“</p>
+<p>一阵沉默之后。</p>
+<p>”还不知Mentor是哪里毕业的呢？公司对面的南洋大学？听说w公司小一半是南洋的毕业生？”</p>
+<p>“不是，临江大学的，应该比你大4届吧...&quot;</p>
+<p>“原来是师兄啊.....”</p>
+<p>“恩....”</p>
+<p>一边与龚磊说着话，九月的车速却没降下来，转到市内高速路上，仪表盘上已经到了120...</p>
+<p>”我们学校在w公司的人不多吧？&quot;</p>
+<p>&quot;不算少了，每一届都有10来个人吧“</p>
+<p>”有没有校友会啥的？“</p>
+<p>”没人组织，做IT的，平时生活也比较简单吧“</p>
+<p>越是接近市区，两边的霓虹灯越是绚丽，龚磊看着飞速向后的两边景色，想着一会儿说不定也就迟到个几分钟，若真是迟太久，自己要见得那个人发起大小姐脾气，也够自己喝一壶的了，还真是亏了九月，这孩子的车技真不是盖的。</p>
+<p>”快到了， 哪里放你下来？“</p>
+<p>”都行：）”龚磊顿了下“谢谢了：）不然今天...&quot;</p>
+<p>&quot;没事：）”说话间，九月已经驶入了千禧广场 “就这里吧，坐好了！”没等龚磊反应，就猛打方向，拉起手刹....</p>
+<p>即便系着安全带，龚磊的脸都差点贴到侧面玻璃上，漂亮的甩尾停车之后，龚磊才看到人群的反应...如同小石头被扔到里水池中...</p>
+<p>龚磊定了定神，又到了声谢谢，开门下车....</p>
+<p>....</p>
+<p>车门重新关上，九月看着龚磊进了商场，嘴角微微翘起。</p>
+<p>”喂，把他送到了，他刚刚上去”</p>
+<p>(本章完)</p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a href="./第十六章：实习生.html" class="mobile-nav-chapters previous">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="./第十八章：千禧广场.html" class="mobile-nav-chapters next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="./第十六章：实习生.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="./第十八章：千禧广场.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+    </body>
+</html>

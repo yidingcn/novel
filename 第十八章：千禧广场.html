@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>第十八章：千禧广场 - </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+
+        <!-- MathJax -->
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = localStorage.getItem('theme');
+            if (theme == null) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = localStorage.getItem('sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="./楔子：班车时间表.html"><strong>1.</strong> 楔子：班车时间表</a></li><li><a href="./第一章：燕.html"><strong>2.</strong> 第一章：燕</a></li><li><a href="./第二章：雾.html"><strong>3.</strong> 第二章：雾</a></li><li><a href="./第三章：雪.html"><strong>4.</strong> 第三章：雪</a></li><li><a href="./第四章：船.html"><strong>5.</strong> 第四章：船</a></li><li><a href="./第五章：鱼.html"><strong>6.</strong> 第五章：鱼</a></li><li><a href="./第六章：旋.html"><strong>7.</strong> 第六章：旋</a></li><li><a href="./第七章：阳.html"><strong>8.</strong> 第七章：阳</a></li><li><a href="./第八章：问.html"><strong>9.</strong> 第八章：问</a></li><li><a href="./第九章：旅途.html"><strong>10.</strong> 第九章：旅途</a></li><li><a href="./第十章：风月.html"><strong>11.</strong> 第十章：风月</a></li><li><a href="./第十一章：昔日.html"><strong>12.</strong> 第十一章：昔日</a></li><li><a href="./第十二章：见习.html"><strong>13.</strong> 第十二章：见习</a></li><li><a href="./第十三章：永安路1538.html"><strong>14.</strong> 第十三章：永安路1538</a></li><li><a href="./第十六章：实习生.html"><strong>15.</strong> 第十六章：实习生</a></li><li><a href="./第十七章：高速.html"><strong>16.</strong> 第十七章：高速</a></li><li><a href="./第十八章：千禧广场.html" class="active"><strong>17.</strong> 第十八章：千禧广场</a></li><li><a href="./第十九章：似然.html"><strong>18.</strong> 第十九章：似然</a></li><li><a href="./第二十章：一物降一物.html"><strong>19.</strong> 第二十章：一物降一物</a></li><li><a href="./第二十一章：欢迎宴.html"><strong>20.</strong> 第二十一章：欢迎宴</a></li><li><a href="./第二十二章：邀约.html"><strong>21.</strong> 第二十二章：邀约</a></li><li><a href="./第二十三章：瑾瑜.html"><strong>22.</strong> 第二十三章：瑾瑜</a></li><li><a href="./第二十四章：平行宇宙.html"><strong>23.</strong> 第二十四章：平行宇宙</a></li><li><a href="./第二十五章：宿命.html"><strong>24.</strong> 第二十五章：宿命</a></li><li><a href="./第二十六章：约会.html"><strong>25.</strong> 第二十六章：约会</a></li><li><a href="./第二十七章：赴约.html"><strong>26.</strong> 第二十七章：赴约</a></li><li><a href="./第二十八章：私心.html"><strong>27.</strong> 第二十八章：私心</a></li><li><a href="./第二十九章：献血.html"><strong>28.</strong> 第二十九章：献血</a></li><li><a href="./第三十章：意外.html"><strong>29.</strong> 第三十章：意外</a></li><li><a href="./第三十一章：永别.html"><strong>30.</strong> 第三十一章：永别</a></li><li><a href="./第三十二章：摊牌.html"><strong>31.</strong> 第三十二章：摊牌</a></li><li><a href="./第三十三章：转机.html"><strong>32.</strong> 第三十三章：转机</a></li><li><a href="./第三十四章：启程.html"><strong>33.</strong> 第三十四章：启程</a></li><li><a href="./第三十五章：梧桐树大街.html"><strong>34.</strong> 第三十五章：梧桐树大街</a></li><li><a href="./第三十六章：地铁.html"><strong>35.</strong> 第三十六章：地铁</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush"></i>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="./第十八章：千禧广场.html#第十八章-千禧广场" id="第十八章-千禧广场"><h2>第十八章 千禧广场</h2></a>
+<p>千禧广场，霓虹闪烁，人头攒动。</p>
+<p>芮蕾坐在大厦顶楼的旋转餐厅里，透过餐厅的玻璃外墙，对着地面上的人群和灯光发着呆。芮蕾今天是有精心打扮过的，长发披肩的她画着淡淡的水妆，不着痕迹的眼线和眼影除了衬托出她漂亮的眼睛以外不会给任何人带来突兀的感觉。芮蕾涂了淡粉色的唇彩，却有点让人琢磨不透，因为你要是喊一个不懂行的人来看，他一定会以为这是自然的气色。她穿了一条宝蓝色的长裙，裙子的下摆有一个很精致的褶皱。一双象牙白的高跟鞋朴朴素素，芮蕾要是站起来走动走动，那鞋便会藏进裙摆里。这样的一个姑娘，要是不笑，一般人大概是不敢上去搭话的，因为气场太强了。</p>
+<p>芮蕾对着玻璃出着神，渐渐地发现自己的眼神失焦了，人群和霓虹灯彩混到了一起，呈现出一种迷离的光晕。而这光晕还是动态的，在视野里闪闪烁烁。芮蕾喜欢这种闪烁，她觉得那像是小时候看到过的在阳光下飞舞的肥皂泡泡。那些泡泡，有的大，有的小，在空中飞舞，飘散。可是突然“嘭”的一下，所有的泡泡都在眼前消失了。一个调皮的小男孩站在那里，手里拿着一根树枝，得意洋洋地对着芮蕾笑。</p>
+<p>“看，我把它们都打破了”，男孩扬着手里的树枝自豪地说。</p>
+<p>“你为什么要把他们打破呀？”，芮蕾问。</p>
+<p>“因为它们一共有14个，不吉利”，男孩边说边抬起眼睛看着天，手里的树枝不时地像点头那样一点一点，仿佛在脑海里重现刚才数泡泡时的情形。</p>
+<p>芮蕾不禁莞尔。这回忆中的男孩，正是她从小玩到大的伙伴，今天约了她在这里晚餐的龚磊。</p>
+<p>芮蕾笑着，眼神恢复了焦点。她不由地发现了玻璃上映出的自己的脸庞有一丝焦虑，“这死人龚磊，怎么还不来”，芮蕾心想。可一想到一会儿他出现的时候一定又是和往常一样穿了一件冲锋衣牛仔裤就大摇大摆的进来了，在这样的高级餐厅一定又会引起大家的侧目，芮蕾的表情就又明媚了。“嘿嘿，一会儿就看他的笑话，谁让他又迟到的”。</p>
+<p>突然，楼下的人群中似乎起了一阵骚动。人群像波浪一样往一个方向推散开去，偌大的广场上留出了一个半个足球场那么大的空间。不一会儿，一阵引擎的轰鸣声由远而近地传来，即使是坐在这顶楼的旋转餐厅，隔着那厚实的玻璃，也能感觉到引擎声给人带来的震动。芮蕾被人群的异动和引擎的声响吸引了注意力。</p>
+<p>不一会儿，一辆橙色的跑车滑入了芮蕾的视线。跑车好像是从餐厅大厦的旁边那条马路拐到广场上的，因为芮蕾并没有远远地就看到它，它是突然进入视野的。转弯的跑车，并没有减速，而是好似被一堵巨墙阻挡了一般，嗖地就停在了人群让出的那一片空地上。从芮蕾的视角看来，足像是一块橙色的香皂在地上滑，推开了像极了泡沫的人群。芮蕾一边觉得这样的想象很有趣，一边担心着车里的人会不会因为急刹而受伤。</p>
+<p>芮蕾猜得没错，车里的乘客似乎真的被急刹冲击到了。她看到副驾驶的门慢慢地打开，却好久没有人从里面出来。而广场上的人群却似乎没芮蕾那么好心肠，有好事的年轻人，已经举起手机对准了打开的车门，好似里面会走出什么明星似的。芮蕾也越来越好奇了，她心里想着，要真是明星，有那么多围观的人群，一会儿龚磊来了，应该很难上楼来吧。</p>
+<p>不一会儿，芮蕾看到车里伸出一条腿，即使是天色已暗，在广场霓虹的照射下也能看清是一条牛仔裤的裤腿。“啊，不是明星”，芮蕾想，“明星哪有穿牛仔裤的”。可广场上的人却似乎不这么想，有比较冲动的已经开始闪起闪光灯来了。只见车里那人停顿了一下，然后就从车里走了出来。</p>
+<p>“是龚磊！”，芮蕾一下认出了那个人。几乎是同时，芮蕾向至今未开门的驾驶座看去。霓虹灯映射在车窗玻璃上，看不清具体的样子，但是却很清楚是个长发的女生。</p>
+<p>“这是谁？”，芮蕾轻轻地说，好似在问身边的人。但是芮蕾身边没有别人，餐厅放着轻松的爵士乐，她的声音便淹没在了悠扬的旋律中。</p>
+<p>（本章完）</p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a href="./第十七章：高速.html" class="mobile-nav-chapters previous">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="./第十九章：似然.html" class="mobile-nav-chapters next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="./第十七章：高速.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="./第十九章：似然.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+    </body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>第八章：问 - </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+
+        <!-- MathJax -->
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = localStorage.getItem('theme');
+            if (theme == null) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = localStorage.getItem('sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="./楔子：班车时间表.html"><strong>1.</strong> 楔子：班车时间表</a></li><li><a href="./第一章：燕.html"><strong>2.</strong> 第一章：燕</a></li><li><a href="./第二章：雾.html"><strong>3.</strong> 第二章：雾</a></li><li><a href="./第三章：雪.html"><strong>4.</strong> 第三章：雪</a></li><li><a href="./第四章：船.html"><strong>5.</strong> 第四章：船</a></li><li><a href="./第五章：鱼.html"><strong>6.</strong> 第五章：鱼</a></li><li><a href="./第六章：旋.html"><strong>7.</strong> 第六章：旋</a></li><li><a href="./第七章：阳.html"><strong>8.</strong> 第七章：阳</a></li><li><a href="./第八章：问.html" class="active"><strong>9.</strong> 第八章：问</a></li><li><a href="./第九章：旅途.html"><strong>10.</strong> 第九章：旅途</a></li><li><a href="./第十章：风月.html"><strong>11.</strong> 第十章：风月</a></li><li><a href="./第十一章：昔日.html"><strong>12.</strong> 第十一章：昔日</a></li><li><a href="./第十二章：见习.html"><strong>13.</strong> 第十二章：见习</a></li><li><a href="./第十三章：永安路1538.html"><strong>14.</strong> 第十三章：永安路1538</a></li><li><a href="./第十六章：实习生.html"><strong>15.</strong> 第十六章：实习生</a></li><li><a href="./第十七章：高速.html"><strong>16.</strong> 第十七章：高速</a></li><li><a href="./第十八章：千禧广场.html"><strong>17.</strong> 第十八章：千禧广场</a></li><li><a href="./第十九章：似然.html"><strong>18.</strong> 第十九章：似然</a></li><li><a href="./第二十章：一物降一物.html"><strong>19.</strong> 第二十章：一物降一物</a></li><li><a href="./第二十一章：欢迎宴.html"><strong>20.</strong> 第二十一章：欢迎宴</a></li><li><a href="./第二十二章：邀约.html"><strong>21.</strong> 第二十二章：邀约</a></li><li><a href="./第二十三章：瑾瑜.html"><strong>22.</strong> 第二十三章：瑾瑜</a></li><li><a href="./第二十四章：平行宇宙.html"><strong>23.</strong> 第二十四章：平行宇宙</a></li><li><a href="./第二十五章：宿命.html"><strong>24.</strong> 第二十五章：宿命</a></li><li><a href="./第二十六章：约会.html"><strong>25.</strong> 第二十六章：约会</a></li><li><a href="./第二十七章：赴约.html"><strong>26.</strong> 第二十七章：赴约</a></li><li><a href="./第二十八章：私心.html"><strong>27.</strong> 第二十八章：私心</a></li><li><a href="./第二十九章：献血.html"><strong>28.</strong> 第二十九章：献血</a></li><li><a href="./第三十章：意外.html"><strong>29.</strong> 第三十章：意外</a></li><li><a href="./第三十一章：永别.html"><strong>30.</strong> 第三十一章：永别</a></li><li><a href="./第三十二章：摊牌.html"><strong>31.</strong> 第三十二章：摊牌</a></li><li><a href="./第三十三章：转机.html"><strong>32.</strong> 第三十三章：转机</a></li><li><a href="./第三十四章：启程.html"><strong>33.</strong> 第三十四章：启程</a></li><li><a href="./第三十五章：梧桐树大街.html"><strong>34.</strong> 第三十五章：梧桐树大街</a></li><li><a href="./第三十六章：地铁.html"><strong>35.</strong> 第三十六章：地铁</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush"></i>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="./第八章：问.html#第八章-问" id="第八章-问"><h2>第八章 问</h2></a>
+<p>又是一个九月。</p>
+<p>九月的确是最清澈的时节。</p>
+<p>实际上，离开故事的上一个篇章，这已经是第三个九月了。</p>
+<p>秋高气爽，当九月再次背上书包踏上上学的路时，她已经是当地一所重点高中的高一生了。</p>
+<p>薇龙由于成绩不大理想，去了另一所学校。而欧阳雪不知是在星火颇有造化，还是某种神通广大，居然去大都市Y城一所好高中上学了。</p>
+<p>在那之后，雪也曾来过几通电话，不过九月都冷淡待之。有时候甚至请教起学术问题。</p>
+<p>有一次，欧阳忽然提起一件九月都快忘记的事。</p>
+<p>“咦？什么你说。”</p>
+<p>“你上次问我找你名字的来历，我倒是找了些关于名字的东西资料你可以看下。</p>
+<p>九月仿佛看到电话的另一头，雪拿着一本笔记本在那念的样子。</p>
+<p>“鲁迅《风波》里有个九斤老太，因为老头子出生时九斤重，所以得名九斤；”</p>
+<p>“……”</p>
+<p>“接下来这个跟你最像啦，《金锁记》里的七巧是七月份生的，所以得名……”</p>
+<p>雪说的时候，九月捂住听筒一度不想听。</p>
+<p>后来她忍不住了，打断雪说。</p>
+<p>“好了，大秀才。那我问你一件重要的事？”</p>
+<p>“唔？说吧”</p>
+<p>“你……喜欢一个<em>风月</em>里出生的女孩对吗？”</p>
+<p>半晌没有应答，可是接下来一声应答却非常干脆。</p>
+<p>“嗯。”</p>
+<p>证据。</p>
+<p>“好了，刚刚妈妈叫我出去吃饭了。再见。”</p>
+<p>其实这个理由并不存在。妈妈晚上在外面有饭局，已经做好了饭让九月自己吃。</p>
+<p>但也无所谓了，人想做一件事的时候，总能找到一万个理由。不想做一件事的时候，同样能找到一万个借口。</p>
+<blockquote>
+<p>It was the best of times, it was the <em>blurst</em> of times.</p>
+</blockquote>
+<p>就这样，九月和平地度过了初中时代，来到了高中的第一堂。</p>
+<p>高中的日子似乎远没有初中出彩，身边的同学再也没有雪、薇龙这样生动的角色。</p>
+<p>或许是重点高中的原因，大家都一副书呆子模样。</p>
+<p>在这里再也没有人跟雪一样东拉西扯了，九月忽然想起雪去星火中学时会不会也是这种感觉。</p>
+<p>哎，想他作甚。</p>
+<p>如果从前的日子是彩色电视的话，那现在简直就是过上了黑白电视的生活。于是九月天天盼望着暑假的到来。</p>
+<p>从硬件条件上讲，这里毕竟比自己原来读的学校强太多。</p>
+<p>几栋大的教学楼，分布着体育馆、电教馆，还有图书馆。</p>
+<p>说道图书馆，这对九月来说倒是个新鲜玩意。以前一直觉得只有带着帽子的博士才会去这种地方。没想到现在高中了就有条件去图书馆。</p>
+<p>有人说你往往在图书管里有闲情花两个小时去选一本你喜爱的书，但回来放在桌上看的时间连两分钟都不到，就该还掉了。</p>
+<p>就这么个奇妙的地方。</p>
+<p>有一次吃完午饭从食堂回来，恰好路过图书馆，九月便突发兴致地进去逛了逛。</p>
+<p>果然，花了一个小时，还是没选到感兴趣的书。</p>
+<p>图书馆的一楼似乎在举行一个书法展，九月出门的时候就顺带看了两眼。</p>
+<p>其中就有这一幅。</p>
+<blockquote>
+<p>侯门一入深似海，从此萧郎是路人</p>
+</blockquote>
+<p>哈，又一个谜底。不过，事到如今，谜面是什么早就无所谓了,不是吗。</p>
+<p>秋去春来，转眼间，暑假马上要开始了。</p>
+<p>这一天，九月坐上了去Y城的长途汽车。九月老早就跟妈妈说好暑假要去舅舅家玩。</p>
+<p>“去是可以，但只能呆一个星期噢。”妈妈回应道。</p>
+<p>“唔……”虽然还想辩解什么，但是总比没有好。</p>
+<p>车子马上要开了，妈妈在下面向九月挥挥手。</p>
+<p>“见到长辈要听话啊。九月！”</p>
+<p>“知道！”九月有点不耐烦地说。不过一想到马上就能见到舅舅家的表哥与表妹，心里总是说不出的开心。</p>
+<p>舅舅家有两个小孩，表哥容嘉现在Y市的一所大学里任教，而表妹容懿则与九月同龄，现在在Y市念高中。</p>
+<p>九月非常喜欢他们两个，同样他们也很喜欢九月。</p>
+<p>九月只有印象很小的时候去过舅舅家一两次，那时候表哥还在读大学，平常时候便只有容懿一个人在家。两个人一起看电视，听音乐，还一起画画。</p>
+<p>容懿是一个十分开朗的女孩，一旦打开了话夹子，那便能讲个没玩。</p>
+<p>“你真想你的名字一样，非常‘容易’相处那。”九月有一次说。</p>
+<p>“哈，九月，你也像九月的天空一样清澈透亮。你的名字是不是这一个来历呀？”</p>
+<p>“这个……我也不知道呢，每次问妈妈她都不直说。你知道你名字的来历吗？”</p>
+<p>“当然啦，容呢是我们家的辈分，哥哥出生的时候呢就取了一个嘉字，象征着美好。等后来有了我呢，因为爸爸也是搞文学的嘛，就选了个懿字，也是美好的意思。合起来呢就是嘉言懿行的意思。”</p>
+<p>“哇，闻着都是满满的文艺气息呢。难怪你们家有文学传统！”</p>
+<p>“可不是呢，不过哥哥的名字嘛‘靳容嘉’，读起来就像‘金融家’。当时还以为我们家总算要出一个经济人才了，没想到哥哥后来还是去当了个语文老师。”</p>
+<p>“哎，这也是天命注定把……那你呢，你将来想做什么？”</p>
+<p>“我……没想过呢。不过反正‘老天自有安排’嘛。”</p>
+<p>“哈，你还真是乐天派嘛……”</p>
+<p>每次想到这里九月总是开心一笑，虽然和容懿见面机会不是很多，但总是怀念和她一起闹腾的场景。</p>
+<p>九月非常享受坐长途车的感觉，可以隔着玻璃望着流动的风景，脑中一面回忆着点点滴滴的趣事。</p>
+<p>车子刚过一收费站，看来马上就要进入Y城境内了。</p>
+<p>到了Y城的车站下车后，九月老远就看到容嘉在一辆小轿车里向她招手,九月赶忙跑过去。</p>
+<p>“哈，九月，长这么高了。快上车！”容嘉说道。</p>
+<p>“唔……哥哥好！”九月有点害羞地说道。</p>
+<p>“哎呀，坐稳哈。容懿知道你要来可高兴啦，都等不及要来车站接你呢。你舅母是劝了半天把她给劝住了。我说我一下班就开车去接你回来，她才安心。”</p>
+<p>“嗯，我也好想见她呢！”</p>
+<p>“对了，容懿参加了学校里组织的一个活动，去泰山游玩，你有没兴趣去。”</p>
+<p>“好呀，好呀。”</p>
+<p>“那回去我给你报上名好了，好像那个旅游团里大部分都是高中生噢。这年头大家都喜欢锻炼独立能力什么的。”</p>
+<p>“嗯。哥哥你看我这不是一个人来Y城了嘛。”</p>
+<p>“哈……你小家伙独立能力是不错嘛。我听说呀前几年有一次也是学校里组织一群小朋友去R城噢，在火车站的时候呢都好好的。等火车一开了就有小朋友开始哭，然后一个哭呢就带着其他人都开始哭。最后几个车厢的小朋友都在哭。忙得几个带队的老师也没办法。”</p>
+<p>“嗯……一车小朋友是不好带呀。”</p>
+<p>说着说着，车已经开到舅舅家。</p>
+<p>九月赶忙奔上楼敲门，果然容懿已经在门口等着她，一进门她就拉着九月说个不停。</p>
+<p>九月同舅舅舅母打过招呼以后，便随着容懿进了她的房间。九月发现从前来的时候没见过这个房间，于是好奇地问容懿。</p>
+<p>“这原来是哥哥的房间啦，他在的时候一直锁着不让我们进；后来他搬走啦，这个房间就留给我当书房咯。”</p>
+<p>“嘿嘿，容嘉难不成有什么秘密在这里呀。”</p>
+<p>“哈，谁知道呢。不过他搬家的时候呢把大部分东西都拿走啦，就留下这些书。”容懿说着指指书橱。“说留给我看。”</p>
+<p>“那……这些你都看完了？”九月惊奇地问道。</p>
+<p>“嗯……有一些太枯燥了就没看那，我喜欢人物传记什么的。”</p>
+<p>九月的手正好碰到一本《拿破仑传》，便顺手拿了起来，翻到序言的时候，九月不禁顿了一顿。</p>
+<blockquote>
+<p>拿破仑·波拿巴（Napoléon Bonaparte），法国军事家、政治家与法学家，法兰西第一共和国执政、法兰西第一帝国皇帝。……</p>
+</blockquote>
+<p>“咦？拿破仑原来也叫波拿马呀？”</p>
+<p>“嗯，是他的姓氏。其实这个介绍不准啦，他还是位数学家呢！”</p>
+<p>“啊？为什么呢？”</p>
+<p>容懿说着从一边拿下一本《几何趣谈》。</p>
+<p>“诺，这里面有那，数学界还有个定理叫拿破仑定理呢。”</p>
+<p>果然是书香门第，连女孩子都知道这么多。</p>
+<p>转念一想，怪不得叫“好好学习就会知道的”，原来是这么回事。那为什么干脆叫“好好读书就会知道的”？</p>
+<p>看着九月呆呆的样子，容懿露出了微微笑意。</p>
+<p>“对了九月，明天我要去泰山玩，你也一起来吧！”</p>
+<p>“好呀，容嘉跟我说过了。要带什么东西吗，我们先准备准备。”</p>
+<p>“不用带啥吧……唔对了，把数码相机带上吧，我们多拍点照。”</p>
+<p>“嗯。”</p>
+<p>（本章完）</p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a href="./第七章：阳.html" class="mobile-nav-chapters previous">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="./第九章：旅途.html" class="mobile-nav-chapters next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="./第七章：阳.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="./第九章：旅途.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+    </body>
+</html>

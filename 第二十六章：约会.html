@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>第二十六章：约会 - </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+
+        <!-- MathJax -->
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = localStorage.getItem('theme');
+            if (theme == null) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = localStorage.getItem('sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="./楔子：班车时间表.html"><strong>1.</strong> 楔子：班车时间表</a></li><li><a href="./第一章：燕.html"><strong>2.</strong> 第一章：燕</a></li><li><a href="./第二章：雾.html"><strong>3.</strong> 第二章：雾</a></li><li><a href="./第三章：雪.html"><strong>4.</strong> 第三章：雪</a></li><li><a href="./第四章：船.html"><strong>5.</strong> 第四章：船</a></li><li><a href="./第五章：鱼.html"><strong>6.</strong> 第五章：鱼</a></li><li><a href="./第六章：旋.html"><strong>7.</strong> 第六章：旋</a></li><li><a href="./第七章：阳.html"><strong>8.</strong> 第七章：阳</a></li><li><a href="./第八章：问.html"><strong>9.</strong> 第八章：问</a></li><li><a href="./第九章：旅途.html"><strong>10.</strong> 第九章：旅途</a></li><li><a href="./第十章：风月.html"><strong>11.</strong> 第十章：风月</a></li><li><a href="./第十一章：昔日.html"><strong>12.</strong> 第十一章：昔日</a></li><li><a href="./第十二章：见习.html"><strong>13.</strong> 第十二章：见习</a></li><li><a href="./第十三章：永安路1538.html"><strong>14.</strong> 第十三章：永安路1538</a></li><li><a href="./第十六章：实习生.html"><strong>15.</strong> 第十六章：实习生</a></li><li><a href="./第十七章：高速.html"><strong>16.</strong> 第十七章：高速</a></li><li><a href="./第十八章：千禧广场.html"><strong>17.</strong> 第十八章：千禧广场</a></li><li><a href="./第十九章：似然.html"><strong>18.</strong> 第十九章：似然</a></li><li><a href="./第二十章：一物降一物.html"><strong>19.</strong> 第二十章：一物降一物</a></li><li><a href="./第二十一章：欢迎宴.html"><strong>20.</strong> 第二十一章：欢迎宴</a></li><li><a href="./第二十二章：邀约.html"><strong>21.</strong> 第二十二章：邀约</a></li><li><a href="./第二十三章：瑾瑜.html"><strong>22.</strong> 第二十三章：瑾瑜</a></li><li><a href="./第二十四章：平行宇宙.html"><strong>23.</strong> 第二十四章：平行宇宙</a></li><li><a href="./第二十五章：宿命.html"><strong>24.</strong> 第二十五章：宿命</a></li><li><a href="./第二十六章：约会.html" class="active"><strong>25.</strong> 第二十六章：约会</a></li><li><a href="./第二十七章：赴约.html"><strong>26.</strong> 第二十七章：赴约</a></li><li><a href="./第二十八章：私心.html"><strong>27.</strong> 第二十八章：私心</a></li><li><a href="./第二十九章：献血.html"><strong>28.</strong> 第二十九章：献血</a></li><li><a href="./第三十章：意外.html"><strong>29.</strong> 第三十章：意外</a></li><li><a href="./第三十一章：永别.html"><strong>30.</strong> 第三十一章：永别</a></li><li><a href="./第三十二章：摊牌.html"><strong>31.</strong> 第三十二章：摊牌</a></li><li><a href="./第三十三章：转机.html"><strong>32.</strong> 第三十三章：转机</a></li><li><a href="./第三十四章：启程.html"><strong>33.</strong> 第三十四章：启程</a></li><li><a href="./第三十五章：梧桐树大街.html"><strong>34.</strong> 第三十五章：梧桐树大街</a></li><li><a href="./第三十六章：地铁.html"><strong>35.</strong> 第三十六章：地铁</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush"></i>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="./第二十六章：约会.html#第二十六章约会" id="第二十六章约会"><h2>第二十六章：约会</h2></a>
+<p>“啊？”，芮蕾对龚磊突然的表白大吃一惊。</p>
+<p>“芮蕾，做我女朋友吧。”，龚磊又说了一次。</p>
+<p>“怎么突然…这么说…？”，芮蕾回过神来，有些羞涩。</p>
+<p>“你不是说我被她俩迷得鬼迷心窍了嘛，我想我告诉你：我没有。我和你从小一起长大，我对你的感情，你是了解的吧？其实这句话我早就想说了，之所以选择今天说，是想证明给你看，我的心里只有你。”，龚磊似乎有些急于表白。他拔下了手机上的耳机，直接对着手机说道。</p>
+<p>“恩…我知道…恩…我…”，芮蕾有些支支吾吾，她觉得自己有些喘不过气来，不得不把手机拿得离自己远一些，生怕龚磊听到自己的局促。手机离开了她的脸庞，屏幕便亮了起来，显示出一张芮蕾和龚磊在海洋世界的合照。合照里的芮蕾穿着一条缀满了碎花图案的白裙子，虽然在微笑，但是神情似乎有些紧张。龚磊在她的身后探出一个脑袋，调皮地伸出手掌，张牙舞爪地好像是一只要把身前的芮蕾一口吃了的狮子一样。两人的身后，是一面水族箱的玻璃，水族箱的里面游弋着一条白鲸。白鲸游在两个人的头上，恰似一道门拱。</p>
+<p>芮蕾看着手机上的照片，不由轻轻一笑。“龚磊这家伙总是这么二”，她想。想到龚磊还在电话那头，芮蕾生怕他又说了什么自己没听见，于是又把手机放回了耳边。手机里龚磊没在说话，芮蕾便放心了。</p>
+<p>“那…那你为什么要在电话里说这些？为什么不当面跟我说？”，芮蕾拿电话的另一只手的食指习惯性地绕着自己披肩长发的发梢。</p>
+<p>“谁让你刚才说我被别人鬼迷心窍啊，我一着急，就说出来了”，龚磊听着芮蕾的语气，想象着芮蕾的情态。“她估计又在一边说话一边玩自己的头发了吧”，龚磊猜。</p>
+<p>“那我不管，以后你得当面重新再说一次”，芮蕾撅了撅嘴。想着龚磊看不到自己撅嘴，芮蕾撅了一下也就不撅了。</p>
+<p>“行行行没问题”，龚磊的语气轻松了许多，脸上还浮现了一些笑容，“那你到底算是答应没有啊？”</p>
+<p>“嘻嘻，等你当面再说一次的时候再告诉你”，芮蕾想象着下次见面怎么惩罚龚磊这个大坏蛋，也悄悄地在电话这头笑了起来……</p>
+<p>和芮蕾通完电话，龚磊便一下躺倒在自己的床上。一天的工作，加上盘算了一天昨天晚上的那件事情，龚磊觉得自己无比的疲倦。幸好九月这个实习生今天请了一天的假没来公司，不然自己都不知道怎么面对她。</p>
+<p>龚磊仰卧着，透过窗户看着窗外的月亮，嘴里念念有词：“芮蕾，做我女朋友吧”，“做我女朋友吧，芮蕾”，“我的女朋友是芮蕾”，“芮蕾是我的女朋友”……觉得其实还是挺顺口的。念了几句，龚磊换了种念法：“九月，做我女朋友吧”，“我的女朋友是韩九月”……</p>
+<p>“矮油…”，龚磊不禁打了个冷颤，“果然不顺口”。</p>
+<p>“这两个九月倒是也没有强逼我，只是说人命关天他找到我已经耗费了许多时间了，只能给我三天考虑。”，龚磊翻了个身，趴在了床上，用手撑着自己的脑袋，“三天…所以周日晚上要给答复。不过如果我不考虑那个我的死活，不愿意献血的话，不知道她们打算怎么办。”龚磊虽然大致接受了所谓平行时空的理论，但是在他心里，还是满心觉得只有自己是龚磊，那个在另一个时空等着自己的血的人充其量就是个素未谋面的陌生人，所以对献血这事儿并不是很积极。龚磊还觉得，虽然献血不是什么大事，又不是要他陪着一起穿越回去，但是被人这样用命运为借口牵着鼻子走感觉很不爽，他想把握自己的人生，而不是让别人告诉自己只能怎么做。</p>
+<p>“明天约芮蕾出来吧”，龚磊打开了手机里一家花店的链接，“让我自己来把握我的人生。”</p>
+<p>周六的下午，阳光明媚。海洋公园里，气球与风筝齐飞，花儿共笑脸一色。公园里的路上到处是大人和孩子。骑着双人自行车和坐着三人脚踏车的人们也和人群交织在一起，来往在不宽不窄的道路上。偶尔风驰电掣地划过一个穿直排轮的少年，娴熟轻巧地穿梭在人群中，也会引起人们的驻足赞叹。</p>
+<p>道路向远方延伸，是一片黄澄澄绿油油的草地。绿油油是因为今年丰沛的雨水让小草成长的格外茁壮，黄澄澄则是因为金黄色的阳光贪婪地倾泻在了草地上。草地的旁边有一个人工湖，湖面有的地方宽，有的地方窄。宽的地方拥挤着许多游船，有脚踏的，也有电动的。而窄的地方，则造起了一座小桥。</p>
+<p>远远地，小桥的上面，走来一对男女。那女孩长发披肩，头发上还停着一副漂亮的墨镜。女孩穿着一条黑白横条相间的裙子，裙子的外面，披着一件短短的牛仔衬衣。而那男孩则穿得草率得多，一条牛仔裤配一件白色短袖的T恤，T恤的外面穿着一件简单的皮衣。男孩的左手拽着一堆在天空中翻飞飘舞的气球，右手提着显然是女孩的手提包，皮衣的衣兜里，一支玫瑰花探出头来，随着男孩的步伐频频点头。女孩什么都没拿，把双手背在身后，一踱一踱地走，笑得明艳美丽。他们恰是芮蕾和龚磊。</p>
+<p>“话说芮蕾大小姐，这海洋馆的白鲸你也不是第一次看了，再说人家长得那么可爱，你怎么总被它吓到啊？”，龚磊紧赶慢赶地跟在芮蕾身后。</p>
+<p>“嘿嘿，人家就是怕嘛，谁让它那么大那么大”，芮蕾把背在身后的手在身前打开，比划出了一个很大很大的样子。</p>
+<p>“刚才人家那么小的小朋友都不怕，还上去摸它。你倒好，看个那么可爱的白海豚，怎么还要躲在我身后哦？”，龚磊走到了芮蕾身边，把提着的包的手臂放了下来，好站得离芮蕾近些。</p>
+<p>“这样你就可以保护我啊”，芮蕾似乎有点答非所问。</p>
+<p>“我…”，龚磊刚想接着开芮蕾怕白海豚的玩笑，突然感觉裤兜里一阵震动，“芮蕾，你等一下，我接个电话。”龚磊把右手伸进裤子口袋里，拿出了手机，屏幕上显示的是个陌生号码。龚磊稍稍犹豫了一下，把手里的电话放到了耳边，芮蕾的包挂在手臂弯里，接通了电话。</p>
+<p>“喂，您好”，龚磊从余光里看到芮蕾正调皮地要过来捣乱，用另一只抓着气球的手做了一个“嘘”的手势。</p>
+<p>“喂…mentor…”</p>
+<p>“啊？哦，是你呀。什么事？”，龚磊有意不想让芮蕾听出对面是九月。</p>
+<p>“你今晚有空吗？我想找你聊聊。”，九月的声音似乎有些轻。</p>
+<p>“这…”，龚磊看着一旁被远处喂鸽子的人群吸引了注意力的芮蕾，“行。”</p>
+<p>（本章完）</p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a href="./第二十五章：宿命.html" class="mobile-nav-chapters previous">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="./第二十七章：赴约.html" class="mobile-nav-chapters next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="./第二十五章：宿命.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="./第二十七章：赴约.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+    </body>
+</html>

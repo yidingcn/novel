@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>第十章：风月 - </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+
+        <!-- MathJax -->
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = localStorage.getItem('theme');
+            if (theme == null) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = localStorage.getItem('sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="./楔子：班车时间表.html"><strong>1.</strong> 楔子：班车时间表</a></li><li><a href="./第一章：燕.html"><strong>2.</strong> 第一章：燕</a></li><li><a href="./第二章：雾.html"><strong>3.</strong> 第二章：雾</a></li><li><a href="./第三章：雪.html"><strong>4.</strong> 第三章：雪</a></li><li><a href="./第四章：船.html"><strong>5.</strong> 第四章：船</a></li><li><a href="./第五章：鱼.html"><strong>6.</strong> 第五章：鱼</a></li><li><a href="./第六章：旋.html"><strong>7.</strong> 第六章：旋</a></li><li><a href="./第七章：阳.html"><strong>8.</strong> 第七章：阳</a></li><li><a href="./第八章：问.html"><strong>9.</strong> 第八章：问</a></li><li><a href="./第九章：旅途.html"><strong>10.</strong> 第九章：旅途</a></li><li><a href="./第十章：风月.html" class="active"><strong>11.</strong> 第十章：风月</a></li><li><a href="./第十一章：昔日.html"><strong>12.</strong> 第十一章：昔日</a></li><li><a href="./第十二章：见习.html"><strong>13.</strong> 第十二章：见习</a></li><li><a href="./第十三章：永安路1538.html"><strong>14.</strong> 第十三章：永安路1538</a></li><li><a href="./第十六章：实习生.html"><strong>15.</strong> 第十六章：实习生</a></li><li><a href="./第十七章：高速.html"><strong>16.</strong> 第十七章：高速</a></li><li><a href="./第十八章：千禧广场.html"><strong>17.</strong> 第十八章：千禧广场</a></li><li><a href="./第十九章：似然.html"><strong>18.</strong> 第十九章：似然</a></li><li><a href="./第二十章：一物降一物.html"><strong>19.</strong> 第二十章：一物降一物</a></li><li><a href="./第二十一章：欢迎宴.html"><strong>20.</strong> 第二十一章：欢迎宴</a></li><li><a href="./第二十二章：邀约.html"><strong>21.</strong> 第二十二章：邀约</a></li><li><a href="./第二十三章：瑾瑜.html"><strong>22.</strong> 第二十三章：瑾瑜</a></li><li><a href="./第二十四章：平行宇宙.html"><strong>23.</strong> 第二十四章：平行宇宙</a></li><li><a href="./第二十五章：宿命.html"><strong>24.</strong> 第二十五章：宿命</a></li><li><a href="./第二十六章：约会.html"><strong>25.</strong> 第二十六章：约会</a></li><li><a href="./第二十七章：赴约.html"><strong>26.</strong> 第二十七章：赴约</a></li><li><a href="./第二十八章：私心.html"><strong>27.</strong> 第二十八章：私心</a></li><li><a href="./第二十九章：献血.html"><strong>28.</strong> 第二十九章：献血</a></li><li><a href="./第三十章：意外.html"><strong>29.</strong> 第三十章：意外</a></li><li><a href="./第三十一章：永别.html"><strong>30.</strong> 第三十一章：永别</a></li><li><a href="./第三十二章：摊牌.html"><strong>31.</strong> 第三十二章：摊牌</a></li><li><a href="./第三十三章：转机.html"><strong>32.</strong> 第三十三章：转机</a></li><li><a href="./第三十四章：启程.html"><strong>33.</strong> 第三十四章：启程</a></li><li><a href="./第三十五章：梧桐树大街.html"><strong>34.</strong> 第三十五章：梧桐树大街</a></li><li><a href="./第三十六章：地铁.html"><strong>35.</strong> 第三十六章：地铁</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush"></i>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="./第十章：风月.html#第十章-风月" id="第十章-风月"><h2>第十章 风月</h2></a>
+<p>第二天起来，天气格外晴朗。</p>
+<p>九月跟容懿很快背上了行装踏上了旅途。他们参加的是零散的旅游团，只负责接送住宿，并无导游服务。</p>
+<p>对于这点，二人倒觉得无所谓，不都是看风景吗，与其听导游七扯八扯，还不如自己好好体会。</p>
+<p>泰山不愧是五岳独尊，除了巍峨山景，一路上到处都是文人墨客留下的字迹。</p>
+<p>“哎，要是我们是古代人那，不作几首诗都不好意思下山嘛。”容懿说道。</p>
+<p>“哈，还好我们活在现代，不过别说作诗了。连他们刻好的这些诗我都看不懂。”</p>
+<p>“是啊，这些人都怎么想的。尽用些看不懂的字体来刻。”</p>
+<p>“嘿……不过也这个我看得懂喔。”九月说着指向路边的一块小石刻。</p>
+<blockquote>
+<p>二 虫</p>
+</blockquote>
+<p>“二虫？什么意思啊？”容懿奇怪地叫起来。</p>
+<p>“哎，不管了，既然是放在这里的肯定是古迹没错。来我给你照一张相。”九月说着从包里掏出数码相机。</p>
+<p>“跟二虫合影，是不是很无厘头呀？好吧……茄子。”</p>
+<p>正在这时候，一个高大的身影从台阶下方慢慢奔上来。</p>
+<p>“Hi!”容懿朝着身影方向喊道。</p>
+<p>那个人也停下脚步。“啊，是你们呀。”</p>
+<p>九月定睛一看，居然是昨天的那位大叔，他穿着一身运动装束，似乎是特地来运动的。</p>
+<p>“你还真来‘跑山’那。”容懿问道。</p>
+<p>“嗯，我每个月要来锻炼一次咯。”</p>
+<p>“哈，您老真有闲情。”</p>
+<p>“额，老当益壮嘛。你们这是在拍照诺？”</p>
+<p>“嗯，跟‘二虫’拍照。”</p>
+<p>“哈哈哈，”大叔又爽朗地笑了起来，“如果你们认成‘二虫’啊，那真是白拍了。”</p>
+<p>“啊，那这两个字怎么念你知道？”</p>
+<p>“这样吧，我陪你们走到前面那个庙那边，我路上就顺带跟你们讲讲。”</p>
+<p>“好呀！”容懿说道。</p>
+<p>至始至终九月没有开过口，不知道是害羞还是傲慢。她总觉得跟一个半路认识的陌生人说太多话有点别扭。</p>
+<p>“这个碑文呢在某个朝某个代就立在这儿啦，首先你们想想看古代的文字嘛总不能更现在一样嘛，得从右往左念。”</p>
+<p>“那么说是‘虫二’？这……也莫名其妙嘛。”容懿似乎对这个答案感到很失望。</p>
+<p>“嗯，知道是‘虫二’算是进了一步那。可是古代人都知道是反着念，他们念到了虫二，也一直不知道是什么对吧？仔细看看你们拍的照片噢，这个虫字上面可是有一点的。这个才是关键。”</p>
+<p>九月拿出数码相机回看一下，果然虫子不是标准的写法，而是上面还多了一点。</p>
+<p>“可哪有这个字，难道不是写错了吗？”九月第一次开口。</p>
+<p>“嗯，你想想刻字在这里的人本事都大着呢，哪有这么轻易就刻错了。”</p>
+<p>“那难道是刻字刻了半边，故意漏了？”九月又问道。</p>
+<p>“哈，不错，如果这是推理题嘛，可以给你八十分了。那这个答案嘛，就是给两个字都套上一个下开口的框。”</p>
+<p>两个女孩的手在相机上比划来比划去，联想起加上外框的两个字。</p>
+<blockquote>
+<p>月 風</p>
+</blockquote>
+<p>“月……风对吗？噢，不对要反过来念：风月？”</p>
+<p>“不错，此二字是形容你们驻足处的风景，‘风月无边’那。”</p>
+<p>“哇。”两个女孩想发现新奇观似的欢呼起来。</p>
+<p>“不信，你们回头看看。”</p>
+<p>九月顺着大叔手指的石碑的方向望去，山道两边植被茂密，一旁山谷里流水潺潺，远眺远方高峰更是层峦叠嶂，怪石竦峙。</p>
+<p>虽然还是一样的景，但现在看起来好像有不一样的感觉了。</p>
+<p>“是不是感觉更美了？”</p>
+<p>九月跟容懿连连点头。</p>
+<p>“其实嘛，你们第一遍看到的是自然之美，自然的固有属性在那里，当然美啦。</p>
+<p>“第二遍就不一样了，那叫人文之美，你想想千百年前也看到此美景，他就留一块石碑记录下来与千百年后的我们分享。</p>
+<p>“我们刚才收到了他传递的这个信息，自然很开心啦。那心里的感觉定然是不同了。”</p>
+<p>九月觉得这个解释与自己的内心感觉十分相符，便不住钦佩地点了点头。</p>
+<p>如果这么一想的话，以前学的那么多难背的诗句、课文其实也没有那么讨厌了。</p>
+<p>这些不过是古人的读书笔记，他们站在当时的视角，对所见所感做了如此详尽的描述。</p>
+<p>我们读到这么珍贵的记录，应该感激还来不及呢。</p>
+<p>“好啦，到目的地那。那我该继续跑步去咯。两位好好玩耍。”</p>
+<p>“谢谢你！再见。”两人连忙挥手给大叔致意。</p>
+<p>他们所在的地点边是一座牌坊，上面写着“孔子登临处”几个大字。</p>
+<p>除了这显而易见的“记录”，她们再也找不到其他有意思的东西。于是便开始继续向山上走。</p>
+<p>“九月，我看你开始好像不大爱说话的样子？”</p>
+<p>“唔……见到不熟的人我不大爱讲话。”</p>
+<p>“哈，这倒是挺符合孔圣人的教导，话说我昨天倒是读到一则这样的故事呢。”</p>
+<p>“嗯？”</p>
+<p>“就是说孔子有一次去太庙里，看到台阶旁立着一个铜人，铜人的嘴被三道封条封住，然后背上写着这个人呢是很‘慎言’者。</p>
+<p>“后来孔子就跟弟子说嘛，古人都三缄其口，你们说话一定要谨慎那。”</p>
+<p>“祸从口出吗？”</p>
+<p>“对对，就这个意思。”</p>
+<p>九月默默思考了好半天，觉得不无道理。</p>
+<p>语言承担着交流的本能，但有时候说话说错了往往伤及对方。</p>
+<p>后面的路途上，到了景致好的地方，二人便像其他游客一样，拍照留念。不过再也没有更多关于风景的解读。</p>
+<p>快到山顶时，容懿突然说道：“呜……我们没叫导游真是太可惜了。”</p>
+<p>“唔。”九月表示赞同。</p>
+<p>“后面路上的景色，明显都没有‘风月’之景好看嘛。”</p>
+<p>风月？九月本来想说什么又忽然噎住了。以前好像有谁说喜欢风月来着，莫非是这个风月？怎么会？</p>
+<p>“看来导游的作用不只是乱带带路，如果能把每样自然跟人文景观都讲透，那也是蛮值得的嘛。”容懿继续说到。</p>
+<p>九月表示认同。快到山顶的时候，大概是爬着也累了，九月一下子也想不起许多心思。</p>
+<p>他们在山顶吃完了午饭便选择坐索道下山去。</p>
+<p>从索道上看山景那又是一番不同的感受，九月忽然想古人要是有机会坐到现今的索道里头，会是什么想法。</p>
+<p>“好可惜啊，古代人没索道坐，要不然我们说不准能看到与众不同的作品。”九月说道。</p>
+<p>“哈，那你我现在也可以创作嘛。”</p>
+<p>“我哪行，我语文那么差。”</p>
+<p>“每个人都是天生的语言家……昨天的那位大叔说的，不过当时好像你睡着了。”</p>
+<p>“后来你们又聊了好久？”</p>
+<p>“没有啦，就说了几句而已，我改变开始的看法了，这个人一定是个文学家历、史学家什么的。他好像讲的一些东西都挺有意思。”</p>
+<p>“唔，确实呢。”</p>
+<hr />
+<p>回程的路上，九月一直惦记着那位大叔。</p>
+<p>他似乎什么都知道，就好像故事里的老爷爷，总能在自己需要的时候给自己忠告。</p>
+<p>车子终于回到了千禧广场。</p>
+<p>九月远远地看见容嘉表哥开着车在路边等着，于是赶忙喊容懿一同下了车。</p>
+<p>容嘉把两个小家伙的行李都放好，正准备走向驾驶室。</p>
+<p>九月一直盯着大巴的下车口，发现大叔下车后也朝这个方向走来。九月正打算挥挥手。突然一旁的容嘉却喊了出来。</p>
+<p>“马老师！”</p>
+<p>“哟，小靳呀！”</p>
+<p>容嘉居然认识这个人？</p>
+<p>“哈，您老怎么有空来这那？这是我妹妹容懿跟九月，九月是外地她来这儿玩儿，我来接她们的。”</p>
+<p>“喔，我们见过面那。九月？”</p>
+<p>“唔…是呢，感谢您的诸多教诲。”九月答道。</p>
+<p>看到容嘉感到吃惊的表情，那位马大叔解释道。</p>
+<p>“今天恰巧有兴致，就跟着旅游团去了一趟泰山，就当运动运动，哈哈哈……“</p>
+<p>这时候他腰间的手机响了起来。</p>
+<p>”喔，有电话催了，我得赶回单位去忙了，下趟来聊哈！”</p>
+<p>看着大叔拿着手机手忙脚乱的样子，九月不禁觉得非常有趣。她和容嘉便与这有意思的马大叔挥手道别。</p>
+<p>在车上，九月好奇地问容嘉怎么会认识那位大叔。</p>
+<p>“他呀，是我们这一位有名的出版社编辑。以前我们学院经常跟他们出版社有活动，于是就认识了。对了，这里好像有一张他原来的名片。”</p>
+<p>说着容嘉翻开前驾驶座下储藏箱，从里面的名片夹里翻出一张名片递给九月。</p>
+<p>九月接过来一看，名片上简简单单写着</p>
+<blockquote>
+<p>马尔康 编辑</p>
+</blockquote>
+<blockquote>
+<p>昌江出版社 永安路1538号</p>
+</blockquote>
+<p>尔康？九月忍不住笑了起来,怎么会叫这么奇怪的名字？不过她马上对前面这个出版社名字更感兴趣起来。</p>
+<p>“昌江出版社？就是出版《新芽》杂志的那个吗？”</p>
+<p>“咦，你也知道《新芽》那？他好像就是负责新芽的主编噢。”</p>
+<p>九月好像从记忆的匣子里捞起来一桩事情。</p>
+<p>“那哥哥有空的时候帮我问问……”</p>
+<p>（本章完）</p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a href="./第九章：旅途.html" class="mobile-nav-chapters previous">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="./第十一章：昔日.html" class="mobile-nav-chapters next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="./第九章：旅途.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="./第十一章：昔日.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+    </body>
+</html>

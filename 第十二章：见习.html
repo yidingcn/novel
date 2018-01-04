@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>第十二章：见习 - </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+
+        <!-- MathJax -->
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = localStorage.getItem('theme');
+            if (theme == null) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = localStorage.getItem('sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="./楔子：班车时间表.html"><strong>1.</strong> 楔子：班车时间表</a></li><li><a href="./第一章：燕.html"><strong>2.</strong> 第一章：燕</a></li><li><a href="./第二章：雾.html"><strong>3.</strong> 第二章：雾</a></li><li><a href="./第三章：雪.html"><strong>4.</strong> 第三章：雪</a></li><li><a href="./第四章：船.html"><strong>5.</strong> 第四章：船</a></li><li><a href="./第五章：鱼.html"><strong>6.</strong> 第五章：鱼</a></li><li><a href="./第六章：旋.html"><strong>7.</strong> 第六章：旋</a></li><li><a href="./第七章：阳.html"><strong>8.</strong> 第七章：阳</a></li><li><a href="./第八章：问.html"><strong>9.</strong> 第八章：问</a></li><li><a href="./第九章：旅途.html"><strong>10.</strong> 第九章：旅途</a></li><li><a href="./第十章：风月.html"><strong>11.</strong> 第十章：风月</a></li><li><a href="./第十一章：昔日.html"><strong>12.</strong> 第十一章：昔日</a></li><li><a href="./第十二章：见习.html" class="active"><strong>13.</strong> 第十二章：见习</a></li><li><a href="./第十三章：永安路1538.html"><strong>14.</strong> 第十三章：永安路1538</a></li><li><a href="./第十六章：实习生.html"><strong>15.</strong> 第十六章：实习生</a></li><li><a href="./第十七章：高速.html"><strong>16.</strong> 第十七章：高速</a></li><li><a href="./第十八章：千禧广场.html"><strong>17.</strong> 第十八章：千禧广场</a></li><li><a href="./第十九章：似然.html"><strong>18.</strong> 第十九章：似然</a></li><li><a href="./第二十章：一物降一物.html"><strong>19.</strong> 第二十章：一物降一物</a></li><li><a href="./第二十一章：欢迎宴.html"><strong>20.</strong> 第二十一章：欢迎宴</a></li><li><a href="./第二十二章：邀约.html"><strong>21.</strong> 第二十二章：邀约</a></li><li><a href="./第二十三章：瑾瑜.html"><strong>22.</strong> 第二十三章：瑾瑜</a></li><li><a href="./第二十四章：平行宇宙.html"><strong>23.</strong> 第二十四章：平行宇宙</a></li><li><a href="./第二十五章：宿命.html"><strong>24.</strong> 第二十五章：宿命</a></li><li><a href="./第二十六章：约会.html"><strong>25.</strong> 第二十六章：约会</a></li><li><a href="./第二十七章：赴约.html"><strong>26.</strong> 第二十七章：赴约</a></li><li><a href="./第二十八章：私心.html"><strong>27.</strong> 第二十八章：私心</a></li><li><a href="./第二十九章：献血.html"><strong>28.</strong> 第二十九章：献血</a></li><li><a href="./第三十章：意外.html"><strong>29.</strong> 第三十章：意外</a></li><li><a href="./第三十一章：永别.html"><strong>30.</strong> 第三十一章：永别</a></li><li><a href="./第三十二章：摊牌.html"><strong>31.</strong> 第三十二章：摊牌</a></li><li><a href="./第三十三章：转机.html"><strong>32.</strong> 第三十三章：转机</a></li><li><a href="./第三十四章：启程.html"><strong>33.</strong> 第三十四章：启程</a></li><li><a href="./第三十五章：梧桐树大街.html"><strong>34.</strong> 第三十五章：梧桐树大街</a></li><li><a href="./第三十六章：地铁.html"><strong>35.</strong> 第三十六章：地铁</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush"></i>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <p>第十二章 见习</p>
+<p>第二天，九月吃过早饭后，借口出去锻炼一会。便偷偷从舅舅家溜了出来。</p>
+<p>她凭着脑中的印象，穿过熙熙攘攘的街道，来到了千禧广场。</p>
+<p>虽然是第二次来到这里，但她似乎觉得对这里已经无比熟悉。</p>
+<p>九月走到脑海中照片拍摄的位置，慢慢发起呆来。</p>
+<p>照片里的小喷泉早已不见，取而代之的是在广场中央的大型彩灯喷泉，然而由于是白天，喷泉并没有开放。</p>
+<p>原来三人站的地方现在临时竖起了一块指示牌。</p>
+<blockquote>
+<p>距离花博会开幕还有 一〇〇 天</p>
+</blockquote>
+<p>原来Y城马上要举办花博会了。100，真是个美好的数字。</p>
+<p>指示牌上还画着花博会的吉祥物，长着一双翅膀，不像是花瓣，反而更像是小蜜蜂。</p>
+<p>真是个神奇的地方。</p>
+<p>古时候或许这里是片海洋，后来水退下来了，陆地露了出来。</p>
+<p>整个世界都是新的，犹如水洗过一般，事实上，确实是水洗过。</p>
+<p>开始有了高高大大的树木，有了草丛，草丛里还开出了一些小黄花。</p>
+<p>来了几只小蜜蜂，就好像开始看到的吉祥物那个模样，她们围绕着小黄花飞舞，飞舞。</p>
+<p>不知道过了多少年以后，一场大洪水降临，把一切都吞没了。仿佛一起又回到海水退去之前。</p>
+<p>感谢禹和鲤鱼的帮助，大水终于褪去。不久以后，来了第一批迁徙者，他们捕鱼、结网，在这里定居下来。</p>
+<p>后来便是尔康故事里的场景了，瘟疫褪去，既安且宁。红梅流芳，千禧既出，谁与争锋？</p>
+<p>再后来呢？最不可思议的事情发生了。</p>
+<p>对于自己来说这个广场是个陌生的地方，没想到自己的先辈居然早已在这里留下足迹。</p>
+<p>哈，会不会将来有一天，九月也会在这里留下故事呢？</p>
+<p>九月闭上眼，回想起照片里的那片桂花。花儿开得那么灿烂，那么美。</p>
+<p>可是忽然下起雨来，打湿了花儿，很快地上形成了流水，黄色的花瓣一片一片被水冲走。</p>
+<blockquote>
+<p>雨夜花，雨夜花，受风雨吹落地。无人看见，每日怨嗟，花谢落土不再回。</p>
+</blockquote>
+<blockquote>
+<p>花落土，花落土，有谁人通看顾。无情风雨，误阮前途，花蕊若落欲如何。</p>
+</blockquote>
+<blockquote>
+<p>雨无情，雨无情，无想阮的前程。并无看顾，软弱心性，乎阮前途失光明。</p>
+</blockquote>
+<blockquote>
+<p>雨水滴，雨水滴，引阮入受难池。怎样乎阮，离叶离枝，永远无人通看见。</p>
+</blockquote>
+<hr />
+<p>中午的时候，九月回到了舅舅家，正想着要打电话给容嘉问问。这时候容嘉却突然打了个电话过来。</p>
+<p>“九月，告诉你一个好消息。”</p>
+<p>“咿，怎么了？”</p>
+<p>“早上马老师打电话给我，说他们编辑部要弄一个夏令营活动，因此呢需要几个实习编辑助理帮忙。”</p>
+<p>“哇…”</p>
+<p>“他是让我推荐我有没有感兴趣的学生，我就说那我推荐我妹妹九月行吗。他说对你印象不错，非常欢迎你来咯…”</p>
+<p>“是去他们编辑部工作吗？那有机会见到很多作家咯？”九月的声音听起来略带欣喜。</p>
+<p>“嗯，你跟姑姑商量下吧。要不就多在容懿那住几天。”</p>
+<p>“好！我这就去说。”</p>
+<p>“那好，我先挂啦。”</p>
+<p>过了半晌，九月突然反应过来。</p>
+<p>“哥哥……”</p>
+<p>可是这时候听筒里传来的已经是嘟嘟的电流声。</p>
+<p>（未完）</p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a href="./第十一章：昔日.html" class="mobile-nav-chapters previous">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="./第十三章：永安路1538.html" class="mobile-nav-chapters next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="./第十一章：昔日.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="./第十三章：永安路1538.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+    </body>
+</html>

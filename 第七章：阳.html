@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>第七章：阳 - </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+
+        <!-- MathJax -->
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = localStorage.getItem('theme');
+            if (theme == null) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = localStorage.getItem('sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="./楔子：班车时间表.html"><strong>1.</strong> 楔子：班车时间表</a></li><li><a href="./第一章：燕.html"><strong>2.</strong> 第一章：燕</a></li><li><a href="./第二章：雾.html"><strong>3.</strong> 第二章：雾</a></li><li><a href="./第三章：雪.html"><strong>4.</strong> 第三章：雪</a></li><li><a href="./第四章：船.html"><strong>5.</strong> 第四章：船</a></li><li><a href="./第五章：鱼.html"><strong>6.</strong> 第五章：鱼</a></li><li><a href="./第六章：旋.html"><strong>7.</strong> 第六章：旋</a></li><li><a href="./第七章：阳.html" class="active"><strong>8.</strong> 第七章：阳</a></li><li><a href="./第八章：问.html"><strong>9.</strong> 第八章：问</a></li><li><a href="./第九章：旅途.html"><strong>10.</strong> 第九章：旅途</a></li><li><a href="./第十章：风月.html"><strong>11.</strong> 第十章：风月</a></li><li><a href="./第十一章：昔日.html"><strong>12.</strong> 第十一章：昔日</a></li><li><a href="./第十二章：见习.html"><strong>13.</strong> 第十二章：见习</a></li><li><a href="./第十三章：永安路1538.html"><strong>14.</strong> 第十三章：永安路1538</a></li><li><a href="./第十六章：实习生.html"><strong>15.</strong> 第十六章：实习生</a></li><li><a href="./第十七章：高速.html"><strong>16.</strong> 第十七章：高速</a></li><li><a href="./第十八章：千禧广场.html"><strong>17.</strong> 第十八章：千禧广场</a></li><li><a href="./第十九章：似然.html"><strong>18.</strong> 第十九章：似然</a></li><li><a href="./第二十章：一物降一物.html"><strong>19.</strong> 第二十章：一物降一物</a></li><li><a href="./第二十一章：欢迎宴.html"><strong>20.</strong> 第二十一章：欢迎宴</a></li><li><a href="./第二十二章：邀约.html"><strong>21.</strong> 第二十二章：邀约</a></li><li><a href="./第二十三章：瑾瑜.html"><strong>22.</strong> 第二十三章：瑾瑜</a></li><li><a href="./第二十四章：平行宇宙.html"><strong>23.</strong> 第二十四章：平行宇宙</a></li><li><a href="./第二十五章：宿命.html"><strong>24.</strong> 第二十五章：宿命</a></li><li><a href="./第二十六章：约会.html"><strong>25.</strong> 第二十六章：约会</a></li><li><a href="./第二十七章：赴约.html"><strong>26.</strong> 第二十七章：赴约</a></li><li><a href="./第二十八章：私心.html"><strong>27.</strong> 第二十八章：私心</a></li><li><a href="./第二十九章：献血.html"><strong>28.</strong> 第二十九章：献血</a></li><li><a href="./第三十章：意外.html"><strong>29.</strong> 第三十章：意外</a></li><li><a href="./第三十一章：永别.html"><strong>30.</strong> 第三十一章：永别</a></li><li><a href="./第三十二章：摊牌.html"><strong>31.</strong> 第三十二章：摊牌</a></li><li><a href="./第三十三章：转机.html"><strong>32.</strong> 第三十三章：转机</a></li><li><a href="./第三十四章：启程.html"><strong>33.</strong> 第三十四章：启程</a></li><li><a href="./第三十五章：梧桐树大街.html"><strong>34.</strong> 第三十五章：梧桐树大街</a></li><li><a href="./第三十六章：地铁.html"><strong>35.</strong> 第三十六章：地铁</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush"></i>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="./第七章：阳.html#第七章-阳" id="第七章-阳"><h2>第七章 阳</h2></a>
+<p>看来烦恼只是远离了餐桌，被她暂时关在了小房间而已。</p>
+<p>九月还是很想哭，但是又哭不出来。</p>
+<p>她打开第一个抽屉，九月又看到那个蓝色笔记本。</p>
+<blockquote>
+<p>我每天把纸船一个个放在急流的溪中。</p>
+</blockquote>
+<blockquote>
+<p>我用大黑字写我的名字和我住的村名在纸船上。</p>
+</blockquote>
+<p>一开始，她只是觉得这不过是雪的随便写写的两句话。如果要说有什么特别的话，那也就是字写得很好看。</p>
+<p>后来她在在《新芽》上无意中看到，这原来是泰戈尔的一首诗，名字就叫《纸船》。</p>
+<p>解开一个谜总是让人兴奋的，尤其是当你甚至不知道这是个谜的时候。</p>
+<p>这一次，九月觉得自己同时发现了谜面与谜底。</p>
+<p>可是兴奋没有持续多久，就到了今天。</p>
+<p>为什么是这样子呢？九月心里想不明白。</p>
+<p>她很想把这本本子扔到废纸篓里，再也不见到她。</p>
+<p>人们生气的时候，总要找一个发泄的替代品，哪怕这怨恨只是来自于自己内心的妄想。</p>
+<p>九月回想起刚拿到这本笔记本的那天晚上。</p>
+<p>那一天，雪刚刚说要转学。</p>
+<p>九月那天晚上也是心情十分的惆怅，但她说不出为什么。</p>
+<p>不就是一个<em>普通</em>的同学要转走吗，有什么好想的。</p>
+<p>不行，不行，我要做点什么。</p>
+<p>九月想留住这一份记忆，好记性不如烂笔头嘛，于是她开始奋笔疾书，在雪的笔记本里写下了脑子里还新鲜的关于雪的记忆。</p>
+<p>就是这样一本笔记本。</p>
+<p>九月突然想到，也许这是一个很好的‘哭料’，于是她决定最后一次翻阅一遍这里面的笔记，然后再把它扔掉。</p>
+<p>九月的这本笔记很是有趣，它一种不同寻常的与写法来纪录一些事情，全篇上下都是以对话为主线。</p>
+<p>对话的主人公，一个叫做船，一个叫做鱼。</p>
+<p>当然，这种文体在并非九月独创。</p>
+<p>先秦医书《黄帝内经》，主要记载的就是是黄帝与岐伯的对答。汉司马相如《子虚赋》，所载乃子虚乌有二位先生言谈。而当年风行欧洲的《歌德谈话录》，通篇都是埃克曼与歌德的交谈辑录。</p>
+<p>九月当然还未看过这两部书，因此我们对她这样写的灵感还不得而知。不过我们姑且可以给这本笔记起一个标题《船与鱼》（ボートや魚ものがたり）。</p>
+<p>###零</p>
+<p>船：“亚里士多德？不就是被伽利略推翻的那个人吗？小学学过的。”</p>
+<p>鱼：“哪里，亚里士多德可是希腊最伟大的科学家，要么之一，要么之二”。</p>
+<p>船：“你看他连大铁球先落地都说错了。”</p>
+<p>鱼：“人家讲对了九句话，讲错了一句不可以吗？不用这么着抓住这一点不放嘛。”</p>
+<p>船：“哪九句话呢？你还看过他写的书？”</p>
+<p>鱼：“亚里士多德的很多书很奇怪的，很多都是纯对话形式的，真是个怪人。”</p>
+<p>船：“对话？”</p>
+<p>鱼：“可能受老师柏拉图的影响吧，柏大师的《对话录》也都是记载与人谈话呢。”</p>
+<p>船：“那这下可好了，我再不怕写作文咯。”</p>
+<p>鱼：“怎么呢？”</p>
+<p>船：“作文描写什么的太费劲了，编对话可轻松啦。”</p>
+<p>鱼：“那有本事你写作文写写看。”</p>
+<p>###一</p>
+<p>船：“你有没喜欢的明星什么的？”</p>
+<p>鱼：“波拿马。”</p>
+<p>船：“……这个波拿马到底是干嘛的？”</p>
+<p>鱼：“你要好好学习，以后就会知道的。”</p>
+<p>船：“你又不是我妈！说什么呢。”
+鱼：“我是说认真的。”</p>
+<p>船：“我记得你是说法国的？以后我也不见得回去法国呀？”</p>
+<p>鱼：“又不是要去法国才知道……话说回来”</p>
+<p>鱼顿了顿，换了种语调。</p>
+<p>鱼：“一个人进了巴士底，就没有什么以后了。”</p>
+<p>船：“什么？”</p>
+<p>鱼：“突然想到的……以前看过的一本法国小说里，女反派所说的话。”</p>
+<p>###二</p>
+<p>船：“上次说的《芦西外传》，我看了两篇，的确是挺好看的！”</p>
+<p>鱼：“嗯，我就好佩服芦西啊，一个少年居然能独自进川藏探险，还交了不少好朋友，真是有趣。”</p>
+<p>船：“是啊，虽然感觉是编得…但怎么就编得这么好呢？”</p>
+<p>鱼：“语言乃是是作家的生命嘛，同样，作家也可以给语言以生命。”</p>
+<p>船：“这么评价你喜欢的作家。”</p>
+<p>鱼：“唔…对了，你上次说你在Y市有亲戚对吧？”</p>
+<p>船：“是呀，怎么了？我表哥在那边当大学老师。”</p>
+<p>鱼：“那他会不会认识昌江出版社的人呢？就是《新芽》的哪家出版社。”</p>
+<p>船：“有可能把，他可是大学的语文老师。”</p>
+<p>鱼：“如果可以的话……帮我要本贾采和的签名书。”</p>
+<p>船：“你还有这爱好……又不是哈韩的小女生。”</p>
+<p>鱼：“我也可以哈韩呀？哈哪个韩？”</p>
+<p>船：“你说哪个？”</p>
+<p>鱼：“你说哪个？”</p>
+<p>船：“唔，好吧。那你跟着我念：오빠，너무 보고 싶어요。”</p>
+<p>鱼：“欧巴，呢木伯格西北哟？这什么意思？”</p>
+<p>船：“你要好好学习，以后就会知道的。”</p>
+<p>鱼：“……”</p>
+<p>###三</p>
+<p>鱼：“还好你不是十一月出生，要不然岂不是叫韩十一月？不过跟萧十一郎挺配的嘛。”</p>
+<p>船：“切，我叫九月又不是因为我是九月出生的。”</p>
+<p>鱼：“那敢问韩小姐生辰是？”</p>
+<p>船：“这可不是白问的噢？你知道了就要给生日礼物。”</p>
+<p>鱼：“这个自然使得。”</p>
+<p>船：“2月26，你呢？”</p>
+<p>鱼：“嗯，好我记得了。”</p>
+<p>船：“你呢？”</p>
+<p>鱼：“我要是告诉你，那你也要给我一份生日礼物，那岂不是两清了吗？”</p>
+<p>船：“也是噢，不划算。那算了！”</p>
+<p>鱼：“不过，话说回来，你为什么叫九月这个名字呢？”</p>
+<p>船：“这我也不知道……不过，这也像是我的身世之谜吧，电视剧里的主人公很多都有身世之谜的。”</p>
+<p>鱼：“莫非令尊是武林盟主不成？”</p>
+<p>船：“我爸他其实…”</p>
+<p>鱼：“没有那，我只是想到一个说法。其实我们每时每刻都在解谜。”</p>
+<p>船：“解谜？”</p>
+<p>鱼：“是啊，不是吗，生活中有许多知道不知道的东西。大部分谜底尚未揭晓，有些我们却碰巧窥知真相，有些可能永远都不知道答案。”</p>
+<p>船：“好像是如此哩！我就觉得我的名字就是那个难解谜。”</p>
+<p>鱼：“解开难解的谜题获得的快乐也最大嘛。”</p>
+<p>船：“这倒是。那我回敬你一个说法，我听表哥说，有个民族的传说里，整个世界都是神的一场梦。”</p>
+<p>鱼：“那你我现在都是在梦中咯？”</p>
+<p>船：“谁知道呢。”</p>
+<p>###四</p>
+<p>船：“外面好大的风呢，今天。”</p>
+<p>鱼：“唔……我喜欢刮风的月份。”</p>
+<p>船：“简称你喜欢‘风月’。哈哈”</p>
+<p>鱼：“啊……我是喜欢‘风月’的啦，不过不是通常所说的风月。”</p>
+<p>船：“那是什么？”</p>
+<p>鱼：“算啦，你就当是个谜吧。”</p>
+<p>船：“我都有个终身大谜了也？你还给我加谜。”</p>
+<p>鱼：“哎，谜底知不知道又有什么关系呢？”</p>
+<p>船：“谜太多了，心里负担就重啊。”</p>
+<p>鱼：“没事的，反正你只是在别人的梦里。”</p>
+<p>###五</p>
+<p>（最后一篇，似乎这一篇主人公蜕化得跟彻底，我们看到仿佛的真的是船与鱼的对话。）</p>
+<p>船：“你有没有记得这本书？”</p>
+<p>鱼：“唔，第二期的《新芽》嘛。我应该看过了。”</p>
+<p>船：“那你有没有印象封底那张相片，很好看！”</p>
+<p>鱼：“嗯，这个是新芽杂志的特色的，每一期的封底会选一张好看的摄影照片。然后向读者征文，有优秀的话就在下一期刊登出来。”</p>
+<p>船：“是吗？那我还蛮想写这张的，不过…想不到好的词嘛。”</p>
+<p>鱼居然笑了起来。</p>
+<p>船：“笑什么？”</p>
+<p>鱼：“这期的‘答案’，第三期早就登出来了啊。”</p>
+<p>船：“晕。写作还看答案有什么意思。要不鱼君你写写我看看嘛。”</p>
+<p>鱼：“船君，有句话叫做熟读唐诗三百首…”</p>
+<p>船：“切，你背给我听那”</p>
+<p>鱼摇摇脑袋想了想，忽然从桌子里翻开一本书，找出其中一个段落。</p>
+<blockquote>
+<p>还有比竹叶上闪烁着的阳光更美的阳光吗？</p>
+</blockquote>
+<blockquote>
+<p>竹叶和阳光彼此恋慕所闪出的光的戏谑，吸引了我，使我坠入无我的境地。</p>
+</blockquote>
+<blockquote>
+<p>纵令不闪光，阳光透过竹叶所呈现的浅黄透明的亮色，难道不正是令人寂寞、招人喜欢的色彩吗？</p>
+</blockquote>
+<blockquote>
+<p>我自己的心情，完全变成这竹林的心情了。</p>
+</blockquote>
+<blockquote>
+<p>一个月也没同人说上几句像样的话。心情就像空气一般澄清，完全忘却了敞开或关闭自己的感情和感觉的门扉。</p>
+</blockquote>
+<p>船儿的内心感受到了内心的震荡，她很惊讶于自己自己‘词穷’的情景，居然有人能用如此美妙的言辞表达出来。</p>
+<p>船：“喔，好文字！”</p>
+<p>鱼：“那，借给你看几天。”</p>
+<p>看到这里，九月心情似乎好了很多。她回想起雪当时借给她看的那本散文集，川端康成的《花未眠》。</p>
+<p>而其中的第一篇，便是作者在伊豆的一处温泉时，描写处所周边的环境，其中就包含这一段，关于竹林间透过的阳光。</p>
+<p>九月很快喜欢上了这篇文字，反复地读，甚至整篇地抄下来。语言乃是作家的生命。</p>
+<p>“阳光明媚。”她想。她决定把笔记本暂时保存着，或者只是放到一个现在不容易看到的地方。</p>
+<p>(本章完)</p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a href="./第六章：旋.html" class="mobile-nav-chapters previous">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="./第八章：问.html" class="mobile-nav-chapters next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="./第六章：旋.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="./第八章：问.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+    </body>
+</html>

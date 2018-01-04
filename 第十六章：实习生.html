@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>第十六章：实习生 - </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+
+        <!-- MathJax -->
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = localStorage.getItem('theme');
+            if (theme == null) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = localStorage.getItem('sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="./楔子：班车时间表.html"><strong>1.</strong> 楔子：班车时间表</a></li><li><a href="./第一章：燕.html"><strong>2.</strong> 第一章：燕</a></li><li><a href="./第二章：雾.html"><strong>3.</strong> 第二章：雾</a></li><li><a href="./第三章：雪.html"><strong>4.</strong> 第三章：雪</a></li><li><a href="./第四章：船.html"><strong>5.</strong> 第四章：船</a></li><li><a href="./第五章：鱼.html"><strong>6.</strong> 第五章：鱼</a></li><li><a href="./第六章：旋.html"><strong>7.</strong> 第六章：旋</a></li><li><a href="./第七章：阳.html"><strong>8.</strong> 第七章：阳</a></li><li><a href="./第八章：问.html"><strong>9.</strong> 第八章：问</a></li><li><a href="./第九章：旅途.html"><strong>10.</strong> 第九章：旅途</a></li><li><a href="./第十章：风月.html"><strong>11.</strong> 第十章：风月</a></li><li><a href="./第十一章：昔日.html"><strong>12.</strong> 第十一章：昔日</a></li><li><a href="./第十二章：见习.html"><strong>13.</strong> 第十二章：见习</a></li><li><a href="./第十三章：永安路1538.html"><strong>14.</strong> 第十三章：永安路1538</a></li><li><a href="./第十六章：实习生.html" class="active"><strong>15.</strong> 第十六章：实习生</a></li><li><a href="./第十七章：高速.html"><strong>16.</strong> 第十七章：高速</a></li><li><a href="./第十八章：千禧广场.html"><strong>17.</strong> 第十八章：千禧广场</a></li><li><a href="./第十九章：似然.html"><strong>18.</strong> 第十九章：似然</a></li><li><a href="./第二十章：一物降一物.html"><strong>19.</strong> 第二十章：一物降一物</a></li><li><a href="./第二十一章：欢迎宴.html"><strong>20.</strong> 第二十一章：欢迎宴</a></li><li><a href="./第二十二章：邀约.html"><strong>21.</strong> 第二十二章：邀约</a></li><li><a href="./第二十三章：瑾瑜.html"><strong>22.</strong> 第二十三章：瑾瑜</a></li><li><a href="./第二十四章：平行宇宙.html"><strong>23.</strong> 第二十四章：平行宇宙</a></li><li><a href="./第二十五章：宿命.html"><strong>24.</strong> 第二十五章：宿命</a></li><li><a href="./第二十六章：约会.html"><strong>25.</strong> 第二十六章：约会</a></li><li><a href="./第二十七章：赴约.html"><strong>26.</strong> 第二十七章：赴约</a></li><li><a href="./第二十八章：私心.html"><strong>27.</strong> 第二十八章：私心</a></li><li><a href="./第二十九章：献血.html"><strong>28.</strong> 第二十九章：献血</a></li><li><a href="./第三十章：意外.html"><strong>29.</strong> 第三十章：意外</a></li><li><a href="./第三十一章：永别.html"><strong>30.</strong> 第三十一章：永别</a></li><li><a href="./第三十二章：摊牌.html"><strong>31.</strong> 第三十二章：摊牌</a></li><li><a href="./第三十三章：转机.html"><strong>32.</strong> 第三十三章：转机</a></li><li><a href="./第三十四章：启程.html"><strong>33.</strong> 第三十四章：启程</a></li><li><a href="./第三十五章：梧桐树大街.html"><strong>34.</strong> 第三十五章：梧桐树大街</a></li><li><a href="./第三十六章：地铁.html"><strong>35.</strong> 第三十六章：地铁</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush"></i>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="./第十六章：实习生.html#第十六章-实习生" id="第十六章-实习生"><h2>第十六章 实习生</h2></a>
+<p>当龚磊看着电脑屏幕上的这张中英文混杂的班车时间表的时候，他觉得自己的眼睛就快要爆炸了。</p>
+<blockquote>
+<p>Route 41，18:00从园区出发，19:30到达千禧广场</p>
+</blockquote>
+<p>龚磊死死地盯住18:00的数字，像是生怕一晃神它就会从屏幕上消失一样。他慢慢地出现了幻觉，感觉这屏幕上的像素都一个个活了，分裂成了红、绿、蓝三种颜色，手拉着手跳着舞，就像是他小时候看家里的老式电视机的像素那样。伴随着像素跳动的，还有一阵阵的眩晕。龚磊无法抗拒这种眩晕，但他也不愿意把视线从屏幕上移开。慢慢地，一块块黑色的阴影开始占据他的视野。又过了一会儿，所有的东西都好似必须通过这块阴影才能看到了。龚磊觉得这样很好玩。反正又没赶上班车，一晚上的计划又泡汤了。在去食堂之前在这里开开脑洞放放空，他觉得也挺有意思的。</p>
+<p>当龚磊终于觉得这样无聊的时候，屏幕右下角的数字时钟吸引了他的注意力。“18:18。是个去吃饭的好时间”，他想。虽然外表看上去像是一个新潮桀骜的年轻人，工作也是在时下日新月异的IT行业，但龚磊在生活中对“吉利”有着异乎寻常的迷信。车牌号必须带6、带8；约吃饭聚会从来不约整点，而是约在零六分或者零八分；甚至平常工作要写的代码，也恨不得每个文件都写到几百零六行、零八行最好。为此给他code review的同事没少抱怨他，因为为了满足他需要的行数，龚磊总是会给代码加上几行无用的注释。</p>
+<p>为了防止屏幕上的时间突然跳到18:19了，龚磊不由得抓紧时间，“嗖”地站了起来，锁上屏幕，准备出发。可就当他确认完饭卡的确是在右边的裤子口袋抬起头准备走的时候，他突然感到一阵眩晕。这眩晕不光是因为他刚才傻盯着屏幕看了半天，更是因为，这两天刚入职的在他看来有着重度中二病的女实习生，正眨巴着大眼睛，在距离他不到半米的工位上，看着他微笑。而龚磊，恰是这个新来的叫九月的女实习生的mentor。</p>
+<p>“九月，什么怪名字”，龚磊不由得想到部门领导刚把她指派给他时心中的好笑。</p>
+<p>龚磊这人生性不爱受拘束，从他为了追求对“吉利”的迷信就随意改动代码注释这一点就看得出来。所以像他这样的程序员，是最不愿意带什么实习生的。在他看来，实习生没什么生产力，还总是有很多问题要问他。不过最让龚磊不爽的，还是实习生们身上透露出的满满的竞争欲望。龚磊的公司每年招好几十个实习生，可是就只从他们中挑选两三个转正。所以实习生们一进公司就投入到了激烈的竞争中去。龚磊对此嗤之以鼻，他觉得实习表现好还不如分个吉利点儿的工位号。他之所以这么想，是因为当年他实习的时候，就成天上班打酱油，下班泡酒吧。龚磊也满心觉得自己当年最后转正成功，靠的是他4888的工位号和押中的《程序员面试宝典》的第8、18和28题。</p>
+<p>“唉，这次这个小祖宗好像更难缠啊”龚磊从眩晕中恢复过来，看着面前的这个叫九月的实习生想。</p>
+<p>九月进入公司两三天了，龚磊还没给她布置过像样的任务，只是扔了一本团队最近做的项目的入门书籍给她。</p>
+<p>“mentor嘛，我不导，书也可以来导”龚磊暗暗偷笑，为自己又可以省去几天的麻烦而高兴。</p>
+<p>让龚磊万万没想到的是，这才刚第三天，九月就交上来了一份五十页的阅读体会，还附带了一张A4纸大小的勘误表，指出了书里面的几处错误。</p>
+<p>“mentor，我读完了，你看看我写的这些对不对吧。”</p>
+<p>九月交来这两份东西的时候，龚磊正在纠结昨天的feature的实现代码一共写了450行应该怎么办。450是龚磊最头疼的情况之一，原因是虽然加几行或者减几行就可以沾上6和8的边了，但是要摆脱他最讨厌的4，真是加也不行，减也不便。龚磊正头疼是把实现拆分成几个文件好还是和以前一样加几十行看似说明的废话好，他以为暂时摆脱了的中二姑娘，就拿着50页的大部头阅读体会来找他了。</p>
+<p>“怎么不是58页呢”，龚磊为了保持镇定，呷了一口咖啡。</p>
+<p>而当九月从阅读体会的底下抽出那张勘误表的时候，龚磊差点忍不住把刚才呷的那口咖啡全都喷回咖啡杯里。</p>
+<p>“咳咳…啊…咳咳…很好…咳咳…我看一下吧…”龚磊边咳嗽边说。他觉得鼻腔里似乎也进了点咖啡，甜甜的苦苦的，他打算把这笔账都算到写出连一个实习生都能找出错误的书的作者头上去。</p>
+<p>“mentor你没事吧？”九月不由得探出身去，关心地问。</p>
+<p>“啊？哦哦哦没事没事，人在喝咖啡，哪有不呛着啊哈哈哈哈”龚磊本想耍一把幽默，可是话刚出口就后悔了，因为这句话连他自己都觉得太low了。“啊那你的东西我先看一下，你先回座位吧，我看完找你”龚磊为了化解自己的尴尬，就打发九月回去了。他本来还想给九月布置个什么新任务的，比如看一本更无聊的书之类的，可是掂着手里那几十页的打印纸，他想想还是算了。他怕过不了三天，自己又收到这么一沓，所以还是把她先晾那儿吧。</p>
+<p>龚磊自然是不会读什么实习生的阅读体会的，那本给她看的书他自己都没怎么读过。他打算发挥一贯的本领，油嘴滑舌却又语重心长地糊弄过去。“小九啊~哦不不不小月啊~那啥，写得很好嘛啊哈哈哈！有前途！有前途啊哈哈哈！”以前的实习生他都是这么对付的，给几个不痛不痒的任务，给点不痛不痒的反馈。反正只要三个月实习期结束后推荐面试的时候给个“强烈推荐”，没有哪个实习生会和他过不去的。</p>
+<p>所以在费了不小的劲解决了代码的行数问题以后，龚磊的整颗心就都飘到晚上在千禧广场的约会去了。</p>
+<p>可是天不遂人愿，临下班的时候买足彩多纠结了会儿彩票号码，就错过了班车。对着屏幕放个空刚想去吃饭，就又遇上了今天最不想再遇上的人。</p>
+<p>“九月啊，怎么还没回去啊？”龚磊强打起精神，从眼角挤出一点笑容问到。</p>
+<p>“嗯，mentor你也还没回去啊？”九月似乎没察觉到龚磊的假笑，认真地问到。</p>
+<p>“靠这小妮子没回答我的问题，倒问起我来了。”龚磊心里有点不乐意，挤出的那一点笑容也重新藏了回去。</p>
+<p>“欸mentor你要去千禧广场啊？”九月似乎看到了龚磊屏幕上的班车时间表，“可是好像错过了哦”</p>
+<p>“关你什么事啊！”龚磊心里喊到。龚磊没赶上班车本就心情不好，听到九月那么一问再一指出，直像吃了一击闷棍。但想想人家只是一个小实习生，犯不着和她动气，于是回头看了看屏幕，又看了看九月，无奈地点了点头。</p>
+<p>“那我送mentor去吧，我有车”</p>
+<p>“你说啥？”龚磊不敢相信自己的耳朵。</p>
+<p>“我没什么东西要收拾的，我们就出发吧”九月不知道从哪里掏出了一把车钥匙，钥匙扣上的公牛图案让龚磊想起了昨天才送到家的汽车杂志封面上的顶级跑车。</p>
+<p>“她一个女孩子，怎么都没什么东西要收拾，连个包都没带？”龚磊不知道自己为什么会想这些，自己不是应该对那把车钥匙更疑惑一些吗。</p>
+<p>“啊，嗯，好”龚磊想说不用了，却脱口而出了这一句。</p>
+<p>九月似乎也怔了一下,随即恢复了常态。“那走吧”，她说。</p>
+<p>“走吧”龚磊摸了摸全身的口袋，确认钱包手机都在，随即锁上了屏幕。而此刻屏幕上的时间，恰是18:24。</p>
+<p>（本章完）</p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a href="./第十三章：永安路1538.html" class="mobile-nav-chapters previous">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="./第十七章：高速.html" class="mobile-nav-chapters next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="./第十三章：永安路1538.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="./第十七章：高速.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+    </body>
+</html>
